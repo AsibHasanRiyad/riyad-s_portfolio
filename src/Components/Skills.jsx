@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "./CSS/style.css";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { useEffect, useState } from "react";
 
 export default function Skills() {
@@ -34,7 +34,7 @@ export default function Skills() {
       });
   }, []);
   useEffect(() => {
-    fetch("backend.json")
+    fetch("others.json")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -42,19 +42,20 @@ export default function Skills() {
       });
   }, []);
   return (
-    <div className=" text-gray-300">
+    <div className=" text-gray-200">
       <div className=" text-center">
-        <h1 className=" text-2xl md:text-3xl lg:text-5xl font-bold my-6">Skills</h1>
-        <p className=" max-w-3xl text-base text-justify mx-auto">
+        <h1 className=" max-w-xl mx-auto my-6 flex gap-2 items-center justify-center text-white font-light w-fit text-xl cursor-pointer border border-gray-200 rounded-full px-4 py-2 ">
+          {" "}
+          My Skills
+        </h1>
+        <p className=" max-w-5xl text-base text-justify mx-auto text-[#848484] ">
           Lorem ipsum dolor sit, amet Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Veniam magnam, soluta fugiat laborum nostrum,
           ducimus fugit! Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Mollitia unde non accusamus aliquid voluptas numquam minus
-          sapiente aut laudantium. Nihil magnam qui eligendi sit eos aperiam
-          fugiat. Temporibus, commodi odit.
+          elit.
         </p>
       </div>
-      <Swiper
+      {/* <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -64,13 +65,15 @@ export default function Skills() {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        navigation={false}
+        modules={[Autoplay, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className=" bg-black h-full w-full py-5">
-            <h1 className="  text-2xl md:text-3xl lg:text-5xl mb-5 lg:mb-10">Frontend Skills</h1>
+          <div className=" bg-transparent  h-full w-full py-5">
+            <h1 className="  text-2xl md:text-3xl lg:text-5xl mb-5 lg:mb-10">
+              Frontend
+            </h1>
             <div className=" grid grid-cols-4 gap-10 w-3/4 mx-auto">
               {frontEnd.map((data) => (
                 <div
@@ -87,8 +90,10 @@ export default function Skills() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className=" bg-black h-full w-full py-5 md:py-10">
-            <h1 className="  text-2xl md:text-3xl lg:text-5xl mb-5 lg:mb-10">Backend Skills</h1>
+          <div className="  h-full w-full py-5 md:py-10">
+            <h1 className="  text-2xl md:text-3xl lg:text-5xl mb-5 lg:mb-10">
+              Backend
+            </h1>
             <div className=" grid grid-cols-4 gap-10 w-3/4 mx-auto">
               {backEnd.map((data) => (
                 <div
@@ -105,8 +110,10 @@ export default function Skills() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className=" bg-black h-full w-full py-10">
-            <h1 className="  text-2xl md:text-3xl lg:text-5xl mb-5 lg:mb-10">Others Skills</h1>
+          <div className=" bg-transparent h-full w-full py-10">
+            <h1 className="  text-2xl md:text-3xl lg:text-5xl mb-5 lg:mb-10">
+              Others
+            </h1>
             <div className=" grid grid-cols-4 gap-10 w-3/4 mx-auto">
               {others.map((data) => (
                 <div
@@ -122,7 +129,37 @@ export default function Skills() {
             </div>
           </div>
         </SwiperSlide>
-      </Swiper>
+      </Swiper> */}
+      <div className=" grid grid-cols-8 gap-6 my-6">
+        {frontEnd.map((item) => (
+          <div  key={item.name}>
+            <div className=" flex items-center gap-2 border w-fit h-fit px-3 py-3 rounded-full border-gray-200">
+              <img className=" w-12 h-12" src={item.image} alt="" />
+              {/* <h1>{item.name}</h1> */}
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* <div className=" grid grid-cols-4 gap-6 my-6">
+        {backEnd.map((item) => (
+          <div  key={item.name}>
+            <div className=" flex items-center gap-2">
+              <img className=" w-12" src={item.image} alt="" />
+              <h1>{item.name}</h1>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className=" grid grid-cols-4 gap-6 my-6">
+        {others.map((item) => (
+          <div  key={item.name}>
+            <div className=" flex items-center gap-2">
+              <img className=" w-12" src={item.image} alt="" />
+              <h1>{item.name}</h1>
+            </div>
+          </div>
+        ))}
+      </div> */}
     </div>
   );
 }
