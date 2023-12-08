@@ -55,7 +55,7 @@ export default function Skills() {
           elit.
         </p>
       </div>
-      {/* <Swiper
+      <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -129,17 +129,17 @@ export default function Skills() {
             </div>
           </div>
         </SwiperSlide>
-      </Swiper> */}
-      <div className=" grid grid-cols-8 gap-6 my-6">
+      </Swiper>
+      {/* <div className=" grid grid-cols-8 gap-6 my-6">
         {frontEnd.map((item) => (
-          <div  key={item.name}>
+          <div key={item.name}>
             <div className=" flex items-center gap-2 border w-fit h-fit px-3 py-3 rounded-full border-gray-200">
               <img className=" w-12 h-12" src={item.image} alt="" />
-              {/* <h1>{item.name}</h1> */}
+             
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
       {/* <div className=" grid grid-cols-4 gap-6 my-6">
         {backEnd.map((item) => (
           <div  key={item.name}>
