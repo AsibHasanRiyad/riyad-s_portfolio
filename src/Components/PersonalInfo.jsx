@@ -16,11 +16,11 @@ const PersonalInfo = () => {
       className=" text-gray-200"
     >
       <h1 className=" text-xl md:text-2xl lg:text-4xl font-semibold mb-3">Web Developer</h1>
-      <p className=" max-w-xl text-xs md:text-lg text-[#D5D5D3]">
+      <p className=" max-w-xl text-sm md:text-lg text-[#D5D5D3]">
         On a continual quest for learning, I leverage a strong work ethic to
         apply my React development skills
       </p>
-      <div className=" grid grid-cols-2 text-[#D5D5D3] font-light text-xs md:text-lg gap-4 mt-4">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 text-[#D5D5D3] font-light text-sm md:text-lg gap-4 mt-4">
         <div className=" flex items-center gap-2">
           <FaUser className=" text-[#A456F6]" />
           <p>Asib Hasan Riyad</p>

@@ -65,11 +65,6 @@ export default function BasicTabs() {
 
   return (
     <Box sx={{ width: "100%" }}>
-      <div>
-        <h1 className="text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500 text-5xl text-center py-10 font-bold">
-          About Me
-        </h1>
-      </div>
       <Box
         sx={{
           display: "inline-block",
@@ -121,7 +116,7 @@ export default function BasicTabs() {
           data-aos-easing="ease-in-sine"
         >
           <h1 className=" text-gray-300 text-3xl my-5">Tools I use everyday</h1>
-          <div className=" text-3xl grid grid-cols-3 text-gray-300 gap-20">
+          <div className=" text-3xl grid grid-cols-1 md:grid-cols-3 text-gray-300 gap-5 md:gap-20">
             <div>
               <h1 className=" text-xl">Frontend</h1>
               <hr className=" my-4" />
