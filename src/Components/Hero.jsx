@@ -7,7 +7,7 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className=" h-screen mt-4 lg:mt-10">
+    <div className=" mt-4 lg:mt-10">
       <div className=" flex justify-center items-center">
         <div>
           {/* Profile picture Section */}
