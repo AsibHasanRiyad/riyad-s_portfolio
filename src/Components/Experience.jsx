@@ -1,7 +1,7 @@
 const Experience = () => {
   return (
     <div>
-      <h1 className=" text-center font-bold text-white text-5xl mb-20">
+      <h1 className=" text-center font-bold  text-5xl mb-20 text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500">
         My Journey
       </h1>
       {/* Journey 1 */}
