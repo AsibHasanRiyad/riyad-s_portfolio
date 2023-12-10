@@ -4,7 +4,7 @@ import "./CSS/Navbar.css";
 const Navbar = () => {
   const navItems = (
     <>
-      <li className="transform hover:scale-125 transition duration-500 ease-out  ">
+      <li className="transform ">
         <NavLink
           to={"/"}
           class="nav"
@@ -15,7 +15,7 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li className="transform hover:scale-125 transition duration-500 ease-out ">
+      <li className="transform ">
         <NavLink
           to={"/skills"}
           class="nav"
@@ -26,7 +26,7 @@ const Navbar = () => {
           Skills
         </NavLink>
       </li>
-      <li className="transform hover:scale-125 transition duration-500 ease-out">
+      <li className="transform ">
         <NavLink
           to={"/experience"}
           className={({ isActive, isPending }) =>
@@ -36,7 +36,7 @@ const Navbar = () => {
           Experience
         </NavLink>
       </li>
-      <li className="transform hover:scale-125 transition duration-500 ease-out">
+      <li className="transform ">
         <NavLink
           to={"/projects"}
           className={({ isActive, isPending }) =>
@@ -46,7 +46,7 @@ const Navbar = () => {
           Projects
         </NavLink>
       </li>
-      <li className="transform hover:scale-125 transition duration-500 ease-out">
+      <li className="transform ">
         <NavLink
           to={"/education"}
           className={({ isActive, isPending }) =>
@@ -64,7 +64,7 @@ const Navbar = () => {
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
         <div className=" px-4 lg:px-20">
-          <div className="w-full navbar text-[#848484] font-bold text-xl">
+          <div className="w-full navbar text-[#F1F2F5]  text-xl">
             <div className="flex-none lg:hidden">
               <label
                 htmlFor="my-drawer-3"
@@ -97,7 +97,7 @@ const Navbar = () => {
                   {navItems}
                 </ul>
               </div>
-              <h1 className=" transform hover:scale-125 transition duration-500 ease-out  cursor-pointer   hover:text-gray-200 ">
+              <h1 className=" transform  cursor-pointer   hover:text-gray-200 ">
                 {" "}
                 <Link target="blank" to="https://github.com/AsibHasanRiyad">
                   <FaGithub className=" text-4xl"></FaGithub>

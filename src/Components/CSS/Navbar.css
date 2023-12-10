@@ -1,4 +1,19 @@
 .active{
     color: white;
-    font-weight: 600;
+    border-bottom: 2px;
+}
+
+li:after{
+    content: '';
+    position: absolute;
+    background-color: #C94FC7;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+li:hover:after{
+    width: 100%;
 }

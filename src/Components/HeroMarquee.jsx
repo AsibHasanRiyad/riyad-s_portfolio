@@ -6,7 +6,7 @@ import { SiFirebase, SiGithub, SiMongodb, SiTailwindcss } from "react-icons/si";
 const HeroMarquee = () => {
   return (
     <div className=" flex items-center text-gray-500">
-      <h1 className=" text-3xl px-4 w-1/5 font-bold text-gray-400 ">
+      <h1 className=" text-lg md:text-xl lg:text-3xl px-4 w-2/5 md:w-1/5 font-bold text-gray-400 ">
         Tech Stack :
       </h1>
       <Marquee pauseOnHover={true} className=" text-5xl  ">

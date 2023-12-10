@@ -1,8 +1,8 @@
 // import Typewriter from "typewriter-effect";
-import { FaCloudDownloadAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { FaGithub } from "react-icons/fa";
+import { HiDownload } from "react-icons/hi";
 import HeroMarquee from "./HeroMarquee";
+import { FaLinkedin } from "react-icons/fa6";
 
 
 const Hero = () => {
@@ -19,23 +19,18 @@ const Hero = () => {
                 alt=""
               />
             </div>
-            {/* <div className="avatar flex justify-center lg:justify-end items-center">
-          <div className="w-3/4 md:w-1/2 lg:w-3/4 rounded-full ">
-            <img src="https://i.ibb.co/pwN45bh/21004063-removebg.png" />
-          </div>
-        </div> */}
           </div>
 
           {/* Description Section */}
           <div className=" text-[#F1F2F5] ">
             <div className=" w-full  space-y-2 lg:space-y-4 text-center">
-              <h1 className=" text-6xl font-bold leading-[60px] mt-5">
+              <h1 className=" text-2xl md:text-5xl lg:text-6xl font-bold leading-8 md:leading-[50px] lg:leading-[60px] mt-5">
                 {" "}
                 <span className=" text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500">
                   Hello, I&apos;m Riyad,{" "}
                 </span>{" "}
                 Web <br />{" "}
-                <span className=" text-5xl">Developer from Bangladesh</span>{" "}
+                <span className=" text-2xl md:text-4xl lg:text-5xl">Developer from Bangladesh</span>{" "}
               </h1>
               {/* <h1 className=" text-gray-100 text-sm md:text-base lg:text-2xl flex gap-5 ">
               Hi I&apos;m Working With
@@ -71,7 +66,7 @@ const Hero = () => {
                 >
                   <h1 className=" my-6 flex gap-2 items-center justify-center  font-light w-fit text-xl cursor-pointer border border-gray-200 rounded-full px-4 py-2 transform hover:scale-110 transition duration-500 ease-out hover:bg-gray-200 hover:text-black">
                     {" "}
-                    <FaCloudDownloadAlt></FaCloudDownloadAlt> Resume
+                    <FaLinkedin></FaLinkedin> LinkedIn
                   </h1>
                 </Link>
                 <Link
@@ -80,7 +75,7 @@ const Hero = () => {
                 >
                   <h1 className=" my-6 flex gap-2 items-center justify-center  font-light w-fit text-xl cursor-pointer border border-gray-200 rounded-full px-4 py-2 transform hover:scale-110 transition duration-500 ease-out hover:bg-gray-200 hover:text-black">
                     {" "}
-                    <FaGithub></FaGithub> GitHub
+                    <HiDownload></HiDownload> Resume
                   </h1>
                 </Link>
               </div>
