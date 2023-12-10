@@ -11,7 +11,7 @@ const Home = () => {
 
          <div>
           <Hero />
-          <Skills />
+          {/* <Skills /> */}
          </div>
   );
 };

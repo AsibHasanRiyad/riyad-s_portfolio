@@ -86,14 +86,17 @@ const Navbar = () => {
                 </svg>
               </label>
             </div>
-            <div className=" navbar-start text-[#848484] text-3xl ">Riyad </div>
-            <div className=" navbar-center hidden lg:block">
-              <ul className="flex gap-7 text-xl">
-                {/* Navbar menu content here */}
-                {navItems}
-              </ul>
+            <div className="navbar-start">
+              <h1 className=" text-4xl text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500">
+                Riyad
+              </h1>
             </div>
             <div className=" navbar-end flex justify-end ">
+              <div className=" hidden lg:block mr-6">
+                <ul className="flex gap-7 text-xl">
+                  {navItems}
+                </ul>
+              </div>
               <h1 className=" transform hover:scale-125 transition duration-500 ease-out  cursor-pointer   hover:text-gray-200 ">
                 {" "}
                 <Link target="blank" to="https://github.com/AsibHasanRiyad">
