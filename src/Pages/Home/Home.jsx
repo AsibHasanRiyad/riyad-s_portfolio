@@ -13,8 +13,8 @@ const Home = () => {
          <div>
           <Hero />
           <Experience />
-          <div className=" grid grid-cols-2 items-center justify-between">
-            <div >
+          <div className=" grid grid-cols-1 lg:grid-cols-2 items-center justify-between">
+            <div className=" flex justify-center" >
               <img src="https://i.ibb.co/B32PZs1/c2c59f267df6e4f35fc630252dd2016d-sticker.png" alt="" />
             </div>
             <Skills />

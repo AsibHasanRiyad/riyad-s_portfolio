@@ -219,25 +219,43 @@ export default function BasicTabs() {
           About Me
         </h1>
       </div>
-      <Box sx={{ display: 'inline-block', border: '1px solid #ccc', borderRadius: '44px' }}>
-        <Box sx={{ borderColor: "transparent", borderBottom:'none' }}>
+      <Box
+        sx={{
+          display: "inline-block",
+          border: "1px solid #ccc",
+          borderRadius: "44px",
+          maxWidth: '100%',
+          overflow:'hidden'
+        }}
+      >
+        <Box sx={{ borderColor: "transparent", borderBottom: "none" }}>
           <Tabs
             sx={{
               "& .Mui-selected": {
-                color: "white",
+                color: "black",
                 bgcolor: "#A456F6",
-                margin:'4px',
+                margin: "4px",
                 borderRadius: "44px",
               },
             }}
-            TabIndicatorProps={{sx:{height: 0}}}
+            TabIndicatorProps={{ sx: { height: 0 } }}
             value={value}
             onChange={handleChange}
-            aria-label="basic tabs example"
+            aria-label="basic scrollable auto tabs example"
             centered
+            variant="scrollable"
+            scrollButtons="auto"
           >
-            <Tab label="Personal Info " {...a11yProps(0)} sx={{ color: "White" }} />
-            <Tab label="Qualification" {...a11yProps(1)} sx={{ color: "White" }} />
+            <Tab
+              label="Personal Info "
+              {...a11yProps(0)}
+              sx={{ color: "White" }}
+            />
+            <Tab
+              label="Qualification"
+              {...a11yProps(1)}
+              sx={{ color: "White" }}
+            />
             <Tab label="Skills" {...a11yProps(2)} sx={{ color: "White" }} />
           </Tabs>
         </Box>
@@ -246,7 +264,12 @@ export default function BasicTabs() {
         <PersonalInfo />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <div className=" text-6xl grid grid-cols-5 text-white gap-5">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-sine"
+          className=" text-6xl grid grid-cols-5 text-white gap-5"
+        >
           <FaCss3 />
           <FaCss3 />
           <FaCss3 />
@@ -257,8 +280,10 @@ export default function BasicTabs() {
           <FaCss3 />
           <FaCss3 />
           <FaCss3 />
-          <h1> <FaHome /> </h1>
-         
+          <h1>
+            {" "}
+            <FaHome />{" "}
+          </h1>
         </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
