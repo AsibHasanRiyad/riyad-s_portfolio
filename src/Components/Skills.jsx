@@ -12,6 +12,8 @@ import "./CSS/style.css";
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
 import { useEffect, useState } from "react";
+import { FaCss3, FaHtml5, FaReact } from "react-icons/fa";
+import { SiJavascript, SiTailwindcss } from "react-icons/si";
 
 export default function Skills() {
   const [frontEnd, setFrontEnd] = useState([]);

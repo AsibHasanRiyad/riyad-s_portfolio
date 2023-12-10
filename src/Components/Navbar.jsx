@@ -100,7 +100,7 @@ const Navbar = () => {
               <h1 className=" transform  cursor-pointer   hover:text-gray-200 ">
                 {" "}
                 <Link target="blank" to="https://github.com/AsibHasanRiyad">
-                  <FaGithub className=" text-4xl"></FaGithub>
+                  <FaGithub className=" transform hover:scale-125 transition duration-500 ease-out text-4xl"></FaGithub>
                 </Link>
               </h1>
             </div>

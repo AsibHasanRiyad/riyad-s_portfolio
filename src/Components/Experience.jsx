@@ -1,114 +1,127 @@
 const Experience = () => {
   return (
     <div>
-      <h1 className=" text-center font-bold text-white text-5xl my-10">
+      <h1 className=" text-center font-bold text-white text-5xl mb-20">
         My Journey
       </h1>
-
       {/* Journey 1 */}
+      <div className=" absolute left-1/2 transform -translate-x-1/2 -translate-y-[28px] z-10 flex items-center justify-center">
+        <h1 className=" flex justify-center items-center bg-gray-700 p-1 rounded-full w-14 h-14 text-gray-200">
+          2023
+        </h1>
+      </div>
       <div className="  py-3 px-2 max-w-2xl mx-auto md:px-0">
         <div className=" relative text-gray-200 antialiased text-sm font-bold">
           {/* vertical line */}
           <div className=" hidden absolute w-1 md:block bg-gray-800 h-full left-1/2 transform -translate-x-1/2"></div>
           {/* left card */}
 
-          <div className=" flex items-center flex-col md:flex-row">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-sine"
+            className=" flex items-center flex-col md:flex-row"
+          >
             <div className=" flex justify-start w-full mx-auto items-center">
               <div className=" w-full md:w-1/2 md:pr-8">
                 <div className=" bg-slate-800 p-4 rounded shadow  ">
-                  <h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatibus vitae quod veniam, similique mollitia soluta
-                    accusantium nisi aut nemo sit dolorum labore iste at. Vitae
-                    tenetur hic quaerat consequatur officia.
+                  <h3 className=" text-lg">
+                    Complete Web Development Course With Jhankar Mahbub
                   </h3>
+                  <h1 className=" text-sm">Programming Hero</h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div className=" rounded-full w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 z-10 flex items-center justify-center">
-        <img
-          className=" rounded-full"
-          src="https://i.ibb.co/JncD8Vj/C40-DF197-D081-4417-93-D2-6523834-FFF94.jpg"
-          alt=""
-        />
+      <div className=" absolute left-1/2 transform -translate-x-1/2 -translate-y-[28px] z-10 flex items-center justify-center">
+        <h1 className=" flex justify-center items-center bg-gray-700 p-1 rounded-full w-14 h-14 text-gray-200">
+          2023
+        </h1>
       </div>
-
       {/* Journey 2 */}
       <div className="  py-3 px-2 max-w-2xl mx-auto md:px-0">
         <div className=" relative text-gray-200 antialiased text-sm font-bold">
           <div className=" hidden absolute w-1 md:block bg-gray-800 h-full left-1/2 transform -translate-x-1/2"></div>
 
-          <div className=" flex items-center flex-col md:flex-row">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-sine"
+            className=" flex items-center flex-col md:flex-row"
+          >
             <div className=" flex justify-end w-full mx-auto items-center">
               <div className=" w-full md:w-1/2 md:pl-8">
                 <div className=" bg-slate-800 p-4 rounded shadow  ">
-                  <h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatibus vitae quod veniam, similique mollitia soluta
-                    accusantium nisi aut nemo sit dolorum labore iste at. Vitae
-                    tenetur hic quaerat consequatur officia.
+                  <h3 className=" text-lg">
+                    Bachelor of Science in Electrical and Electronics
+                    Engineering (EEE)
                   </h3>
+                  <h1 className=" text-sm">
+                    IUBAT— International University of Business Agriculture and
+                    Technology
+                  </h1>
+                  <h1 className=" text-sm">Passing Year: 2023 </h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className=" rounded-full w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 z-10 flex items-center justify-center">
-        <img
-          className=" rounded-full"
-          src="https://i.ibb.co/JncD8Vj/C40-DF197-D081-4417-93-D2-6523834-FFF94.jpg"
-          alt=""
-        />
+      <div className=" absolute left-1/2 transform -translate-x-1/2 -translate-y-[28px] z-10 flex items-center justify-center">
+        <h1 className=" flex justify-center items-center bg-gray-700 p-1 rounded-full w-14 h-14 text-gray-200">
+          2017
+        </h1>
       </div>
-
       {/* Journey 3 */}
       <div className="  py-3 px-2 max-w-2xl mx-auto md:px-0">
         <div className=" relative text-gray-200 antialiased text-sm font-bold">
           <div className=" hidden absolute w-1 md:block bg-gray-800 h-full left-1/2 transform -translate-x-1/2"></div>
 
-          <div className=" flex items-center flex-col md:flex-row">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-sine"
+            className=" flex items-center flex-col md:flex-row"
+          >
             <div className=" flex justify-start w-full mx-auto items-center">
               <div className=" w-full md:w-1/2 md:pr-8">
                 <div className=" bg-slate-800 p-4 rounded shadow  ">
-                  <h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatibus vitae quod veniam, similique mollitia soluta
-                    accusantium nisi aut nemo sit dolorum labore iste at. Vitae
-                    tenetur hic quaerat consequatur officia.
-                  </h3>
+                  <h3 className=" text-lg">Higher Secondary Certificate</h3>
+                  <h1 className=" text-sm">
+                    Adamjee Cantonment College, Dhaka
+                  </h1>
+                  <h1 className=" text-sm">Passing Year: 2017 </h1>
+                  <h1 className=" text-sm">Result: GPA 5.00 </h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* Journey 4 */}
-      <div className=" rounded-full w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 z-10 flex items-center justify-center">
-        <img
-          className=" rounded-full"
-          src="https://i.ibb.co/JncD8Vj/C40-DF197-D081-4417-93-D2-6523834-FFF94.jpg"
-          alt=""
-        />
+      <div className=" absolute left-1/2 transform -translate-x-1/2 -translate-y-[28px] z-10 flex items-center justify-center">
+        <h1 className=" flex justify-center items-center bg-gray-700 p-1 rounded-full w-14 h-14 text-gray-200">
+          2015
+        </h1>
       </div>
       <div className="  py-3 px-2 max-w-2xl mx-auto md:px-0">
         <div className=" relative text-gray-200 antialiased text-sm font-bold">
           <div className=" hidden absolute w-1 md:block bg-gray-800 h-full left-1/2 transform -translate-x-1/2"></div>
 
-          <div className=" flex items-center flex-col md:flex-row">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-sine"
+            className=" flex items-center flex-col md:flex-row"
+          >
             <div className=" flex justify-end w-full mx-auto items-center">
               <div className=" w-full md:w-1/2 md:pl-8">
                 <div className=" bg-slate-800 p-4 rounded shadow  ">
-                  <h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatibus vitae quod veniam, similique mollitia soluta
-                    accusantium nisi aut nemo sit dolorum labore iste at. Vitae
-                    tenetur hic quaerat consequatur officia.
-                  </h3>
+                  <h3 className=" text-lg">Secondary School Certificate</h3>
+                  <h1 className=" text-sm">Sristy Academic School, Tangail</h1>
+                  <h1 className=" text-sm">Passing Year: 2015 </h1>
+                  <h1 className=" text-sm">Result: GPA 5.00 </h1>
                 </div>
               </div>
             </div>

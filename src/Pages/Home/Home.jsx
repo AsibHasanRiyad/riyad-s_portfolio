@@ -2,7 +2,7 @@
 
 import Experience from "../../Components/Experience";
 import Hero from "../../Components/Hero";
-// import Skills from "../../Components/Skills";
+import Skills from "../../Components/Skills";
 
 
 
@@ -12,8 +12,8 @@ const Home = () => {
 
          <div>
           <Hero />
-          {/* <Skills /> */}
           <Experience />
+          <Skills />
          </div>
   );
 };
