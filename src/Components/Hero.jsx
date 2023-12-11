@@ -13,8 +13,8 @@ const Hero = () => {
           <div className=" w-full">
             <div className=" flex justify-center items-center">
               <img
-                className=" rounded-full bg-[#D5D5D3] w-52"
-                src="https://i.ibb.co/vdrjy75/c64d6ed15722ada3de2f3bf0677584cb-sticker.png"
+                className=" rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 w-52"
+                src="https://i.ibb.co/sVb0qhb/IMG-6494-removebg.png"
                 alt=""
               />
             </div>
