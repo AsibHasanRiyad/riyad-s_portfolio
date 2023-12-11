@@ -1,6 +1,7 @@
 import Experience from "../../Components/Experience";
 import Hero from "../../Components/Hero";
 import MyServices from "../../Components/MyServices";
+import Projects from "../../Components/Project/Projects";
 import Skills from "../../Components/Skills";
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
         <Skills />
       </div>
       <MyServices />
+      <Projects />
     </div>
   );
 };
