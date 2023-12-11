@@ -8,7 +8,6 @@ import {
   FaBootstrap,
   FaCss3,
   FaFigma,
-  FaHome,
   FaHtml5,
   FaNodeJs,
   FaReact,
@@ -78,7 +77,7 @@ export default function BasicTabs() {
           <Tabs
             sx={{
               "& .Mui-selected": {
-                color: "white",
+                color: "Black",
                 bgcolor: "#A456F6",
                 margin: "4px",
                 borderRadius: "44px",

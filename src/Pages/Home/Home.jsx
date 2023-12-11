@@ -15,7 +15,7 @@ const Home = () => {
       <div className=" grid grid-cols-1 lg:grid-cols-2 items-center justify-between">
         <div className=" flex justify-center">
           <img
-          className=" w-96"
+          className=" w-72 lg:w-96 mb-10 lg:mb-0"
             data-aos="fade-right"
             data-aos-duration="600"
             data-aos-easing="ease-in-sine"
