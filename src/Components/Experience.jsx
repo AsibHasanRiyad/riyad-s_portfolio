@@ -2,7 +2,7 @@
 
 const Experience = () => {
   return (
-    <div  className=" py-20">
+    <div  className=" py-6 md:py-10 lg:py-20">
       <h1 className=" text-center font-bold pb-2  text-5xl mb-20 text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500">
         My Journey
       </h1>

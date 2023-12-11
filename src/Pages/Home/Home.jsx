@@ -21,7 +21,7 @@ const Home = () => {
         <MyServices />
       </div>
       {/* projects */}
-      <Element name="projects" className=" py-28">
+      <Element name="projects" className=" py-10 md:py-14 lg:py-28">
         <Projects />
       </Element>
       {/* contact */}

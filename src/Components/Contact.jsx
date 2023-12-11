@@ -36,7 +36,7 @@ const Contact = () => {
       );
   };
   return (
-    <section className="bg-transparent  py-20">
+    <section className="bg-transparent py-6 md:py-10 lg:py-20">
       <div className="container px-6 mx-auto">
         <div className="lg:flex lg:items-start lg:-mx-6">
           <div className="lg:w-1/2 lg:mx-6">
@@ -107,8 +107,8 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className=" lg:w-1/2 lg:mx-6">
-            <div className="w-full px-8 mx-auto overflow-hidden bg-transparent rounded-lg   lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
+          <div className=" lg:w-1/2 lg:mx-6 mt-10 lg:mt-0">
+            <div className="w-full px-1 md:px-8 mx-auto overflow-hidden bg-transparent rounded-lg   lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
               <h1 className="text-lg font-medium text-gray-200">
                 What do you want to ask ?
               </h1>

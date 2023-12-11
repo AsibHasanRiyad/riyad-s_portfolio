@@ -24,7 +24,7 @@ const MyServices = () => {
   ];
   return (
     <div>
-      <h1 className="text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500 text-5xl text-center py-20 font-bold">
+      <h1 className="text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500 text-5xl text-center py-6 md:py-10 lg:py-20 font-bold">
         My Services
       </h1>
 
