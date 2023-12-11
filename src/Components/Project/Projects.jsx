@@ -63,7 +63,12 @@ const Projects = () => {
           </p>
         </div>
         {/* slide */}
-        <div className="lg:max-w-[800px] lg:absolute right-0 top-0">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-sine"
+          className="lg:max-w-[800px] lg:absolute right-0 top-0"
+        >
           <Swiper
             className=" h-[480px]"
             slidesPerView={1}
@@ -74,15 +79,9 @@ const Projects = () => {
             }}
             spaceBetween={30}
             modules={[Pagination]}
-            pagination={{ clickable: true }}
           >
             {projectData.map((data, index) => (
-              <SwiperSlide
-                data-aos="fade-left"
-                data-aos-duration="600"
-                data-aos-easing="ease-in-sine"
-                key={index}
-              >
+              <SwiperSlide key={index}>
                 <ProjectSlider data={data} />
               </SwiperSlide>
             ))}

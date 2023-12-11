@@ -9,9 +9,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import MainRoutes from './Routes/MainRoutes.jsx';
+import { Toaster } from 'react-hot-toast';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Toaster position="top-right" />
      <RouterProvider router={MainRoutes} />
   </React.StrictMode>,
 )

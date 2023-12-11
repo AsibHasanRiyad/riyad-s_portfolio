@@ -29,7 +29,9 @@ const Home = () => {
         <Skills />
       </div>
       <MyServices />
-      <div className=" py-28"> 
+      <div
+        className=" py-28"
+      >
         <Projects />
       </div>
       <Contact />
