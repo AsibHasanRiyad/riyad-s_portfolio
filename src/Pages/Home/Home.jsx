@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import Contact from "../../Components/Contact";
 import Experience from "../../Components/Experience";
 import Hero from "../../Components/Hero";
@@ -9,8 +10,12 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <Experience />
-      <div className=" pt-10 pb-5">
+      {/* journey */}
+      <div name="journey">
+        <Experience />
+      </div>
+      {/* about */}
+      <div name="about" className=" pt-10 pb-5">
         <h1 className="text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500 text-5xl text-center py-10 font-bold">
           About Me
         </h1>
@@ -28,13 +33,18 @@ const Home = () => {
         </div>
         <Skills />
       </div>
-      <MyServices />
-      <div
-        className=" py-28"
-      >
-        <Projects />
+      {/* Services */}
+      <div name="services">
+        <MyServices />
       </div>
-      <Contact />
+      {/* projects */}
+      <Element name="projects" className=" py-28">
+        <Projects />
+      </Element>
+      {/* contact */}
+      <div name="contact">
+        <Contact />
+      </div>
     </div>
   );
 };

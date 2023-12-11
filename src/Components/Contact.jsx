@@ -36,7 +36,7 @@ const Contact = () => {
       );
   };
   return (
-    <section className="bg-transparent  mt-20">
+    <section className="bg-transparent  py-20">
       <div className="container px-6 mx-auto">
         <div className="lg:flex lg:items-start lg:-mx-6">
           <div className="lg:w-1/2 lg:mx-6">

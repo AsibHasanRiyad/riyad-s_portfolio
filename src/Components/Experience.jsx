@@ -1,6 +1,6 @@
 const Experience = () => {
   return (
-    <div className=" py-20">
+    <div  className=" py-20">
       <h1 className=" text-center font-bold pb-2  text-5xl mb-20 text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500">
         My Journey
       </h1>
@@ -13,7 +13,7 @@ const Experience = () => {
       <div className="  py-3 px-2 max-w-2xl mx-auto md:px-0">
         <div className=" relative text-gray-200 antialiased text-sm font-bold">
           {/* vertical line */}
-          <div className=" hidden absolute w-1 md:block bg-gray-800 h-full left-1/2 transform -translate-x-1/2"></div>
+          <div className=" hidden absolute w-1 md:block bg-gray-700 h-full left-1/2 transform -translate-x-1/2"></div>
           {/* left card */}
 
           <div
@@ -43,7 +43,7 @@ const Experience = () => {
       {/* Journey 2 */}
       <div className="  py-3 px-2 max-w-2xl mx-auto md:px-0">
         <div className=" relative text-gray-200 antialiased text-sm font-bold">
-          <div className=" hidden absolute w-1 md:block bg-gray-800 h-full left-1/2 transform -translate-x-1/2"></div>
+          <div className=" hidden absolute w-1 md:block bg-gray-700 h-full left-1/2 transform -translate-x-1/2"></div>
 
           <div
             data-aos="fade-left"
@@ -77,7 +77,7 @@ const Experience = () => {
       {/* Journey 3 */}
       <div className="  py-3 px-2 max-w-2xl mx-auto md:px-0">
         <div className=" relative text-gray-200 antialiased text-sm font-bold">
-          <div className=" hidden absolute w-1 md:block bg-gray-800 h-full left-1/2 transform -translate-x-1/2"></div>
+          <div className=" hidden absolute w-1 md:block bg-gray-700 h-full left-1/2 transform -translate-x-1/2"></div>
 
           <div
             data-aos="fade-right"
@@ -107,7 +107,7 @@ const Experience = () => {
       </div>
       <div className="  py-3 px-2 max-w-2xl mx-auto md:px-0">
         <div className=" relative text-gray-200 antialiased text-sm font-bold">
-          <div className=" hidden absolute w-1 md:block bg-gray-800 h-full left-1/2 transform -translate-x-1/2"></div>
+          <div className=" hidden absolute w-1 md:block bg-gray-700 h-full left-1/2 transform -translate-x-1/2"></div>
 
           <div
             data-aos="fade-left"
