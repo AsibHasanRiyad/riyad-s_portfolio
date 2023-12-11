@@ -76,8 +76,8 @@ export default function BasicTabs() {
         <Box sx={{ borderColor: "transparent", borderBottom: "none" }}>
           <Tabs
             sx={{
-              "& .Mui-selected": {
-                color: "Black",
+              "& .Mui-selected.MuiTab-root": {
+                color: "white",
                 bgcolor: "#A456F6",
                 margin: "4px",
                 borderRadius: "44px",
