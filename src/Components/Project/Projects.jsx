@@ -14,7 +14,7 @@ const projectData = [
     name: "Connectopia",
     category: "React js",
     details:
-      "On a continual quest for learning, I leverage a strong work ethic to apply my React development skills",
+      "Technologies Used: React.js,Tailwind CSS,Framer Motion,Stripe, Node.js, Express.js, Mongoose, Firebase, GitHub.",
     Link: "https://connectopia-9e807.web.app/",
     gitHub: "https://github.com/AsibHasanRiyad/connectopia-client",
   },
@@ -24,7 +24,7 @@ const projectData = [
     name: "Learnify",
     category: "React js",
     details:
-      "On a continual quest for learning, I leverage a strong work ethic to apply my React development skills",
+      "Technologies Used: React.js,Tailwind CSS, React pdf, Node.js, Express.js, MongoDB, Firebase, GitHub.",
     Link: "https://learnify-20090.web.app/",
     gitHub: "https://github.com/AsibHasanRiyad/learnify-client",
   },
@@ -34,7 +34,7 @@ const projectData = [
     name: "Gadget Junction",
     category: "React js",
     details:
-      "On a continual quest for learning, I leverage a strong work ethic to apply my React development skills",
+      "Technologies Used: React.js, Tailwind CSS,AOS Animation, Node.js, Express.js, MongoDB, Firebase, GitHub.",
     Link: "https://gadget-junction.web.app/",
     gitHub: "https://github.com/AsibHasanRiyad/gadget-junction-client",
   },
@@ -44,7 +44,7 @@ const projectData = [
     name: "Uplift",
     category: "React js",
     details:
-      "On a continual quest for learning, I leverage a strong work ethic to apply my React development skills",
+      "Technologies Used: React.js, Tailwind CSS,Daisy Ui, Firebase, GitHub.",
     Link: "https://uplift-b07d0.web.app/",
     gitHub: "https://github.com/AsibHasanRiyad/uplift",
   },
@@ -52,16 +52,18 @@ const projectData = [
 
 const Projects = () => {
   return (
-    <div >
+    <div>
       <section className="relative">
         <div className=" container mx-auto ">
           <div className=" max-w-[400px] mx-auto lg:mx-0 text-center lg:text-left mb-12 lg:h-[400px] flex flex-col justify-center  items-center lg:items-start ">
             <h1 className=" text-transparent bg-gradient-to-br py-2 bg-clip-text from-indigo-500 via-purple-500 to-pink-500 text-5xl font-semibold">
               ALl Projects
             </h1>
-            <p className=" text-xl text-gray-200 py-4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum,
-              voluptate?
+            <p className=" text-base text-gray-200 py-4">
+              Browse my portfolio featuring diverse projects, from dynamic web
+              apps with React to intuitive mobile experiences. Each project
+              blends innovation, user-centric design, and cutting-edge
+              technology for impactful results
             </p>
           </div>
           {/* slide */}

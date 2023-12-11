@@ -38,19 +38,25 @@ export default function Achievement() {
         <SwiperSlide>
           <img
             className=" w-full h-full"
-            src="https://i.ibb.co/FBz9xJY/IMG-4855.jpg"
+            src="https://i.ibb.co/ZmtRZRn/Asib-Hasan-Riyad-Graduation-Certificate-1.jpg"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             className=" w-full h-full"
-            src="https://i.ibb.co/qrg6BZk/Asib-Hasan-Riyad-Graduation-Certificate.jpg"
+            src="https://i.ibb.co/c8vBv0W/IMG-1707-1.jpg"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             className=" w-full h-full"
-            src="https://i.ibb.co/hd05pH0/Asib-Hasan-Riyad-HSC-Testimonial-JPG.jpg"
+            src="https://i.ibb.co/QYdRTyj/IMG-1708-1.jpg"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className=" w-full h-full"
+            src="https://i.ibb.co/7Y9hdgX/Asib-Hasan-Riyad-HSC-Testimonial-JPG-2.jpg"
           />
         </SwiperSlide>
       </Swiper>

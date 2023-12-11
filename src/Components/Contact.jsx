@@ -44,10 +44,7 @@ const Contact = () => {
               Get In Touch
             </h1>
             <p className=" text-white py-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              obcaecati commodi quis, quidem suscipit, nobis omnis excepturi,
-              inventore fugit culpa molestias a aliquam magni officiis sapiente
-              facere voluptatibus libero enim?
+            Ready to discuss your project or have a question? I&apos;m here to help! Feel free to reach out via the provided contact form or email. Let&apos;s turn your ideas into reality.
             </p>
 
             <div className=" space-y-4">
@@ -158,7 +155,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   value="Send"
-                  className="w-full px-6 py-3 mt-6 text-base font-medium tracking-wide text-white capitalize bg-gradient-to-r rounded-md from-indigo-700 via-purple-600 to-pink-700 cursor-pointer "
+                  className="w-full px-6 py-3 mt-6 text-base font-medium tracking-wide text-white capitalize bg-gradient-to-r rounded-md from-indigo-700 via-purple-600 to-pink-700 cursor-pointer hover:bg-gradient-to-r  hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 transform hover:scale-105 transition duration-500 ease-out "
                 >
                   get in touch
                 </button>

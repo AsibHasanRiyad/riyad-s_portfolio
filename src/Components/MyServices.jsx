@@ -1,25 +1,25 @@
-import {  FaFigma } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
 import { IoLogoAppleAr } from "react-icons/io5";
 import { SiEbox } from "react-icons/si";
 const MyServices = () => {
   const services = [
     {
       title: "Web Development",
-      icon:<SiEbox /> ,
+      icon: <SiEbox />,
       Description:
-        "On a continual quest for learning, I leverage a strong work ethic to apply my React development skills",
+        "Crafting dynamic websites with React for responsive frontend and Node.js with MongoDB/Mongoose for efficient backends.",
     },
     {
-      title: "App Development",
-      icon:<IoLogoAppleAr /> ,
+      title: "Web Design",
+      icon: <IoLogoAppleAr />,
       Description:
-        "On a continual quest for learning, I leverage a strong work ethic to apply my React development skills",
+        "Crafting captivating web designs that blend aesthetics with functionality for a standout online presence.",
     },
     {
       title: "Figma to HTML",
-      icon:<FaFigma /> ,
+      icon: <FaFigma />,
       Description:
-        "On a continual quest for learning, I leverage a strong work ethic to apply my React development skills",
+        "Turning Figma designs into pixel-perfect HTML. Elevate your visuals with seamless, responsive, and code-optimized web solutions.",
     },
   ];
   return (
@@ -40,8 +40,12 @@ const MyServices = () => {
               <div className=" flex justify-center -top-5 right-21 bg-[#161513] px-3 absolute text-5xl text-[#9b58f5]">
                 {service.icon}
               </div>
-              <h1 className=" text-white mt-8 text-center text-xl font-semibold">{service.title}</h1>
-              <p className=" text-gray-200 text-center text-sm my-3 ">{service.Description}</p>
+              <h1 className=" text-white mt-8 text-center text-xl font-semibold">
+                {service.title}
+              </h1>
+              <p className=" text-gray-200 text-center text-sm my-3 ">
+                {service.Description}
+              </p>
             </div>
           ))}
         </div>
