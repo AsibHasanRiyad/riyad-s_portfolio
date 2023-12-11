@@ -1,7 +1,7 @@
-.active{
+/* .active{
     color: #C94FC7;
     border-bottom: 2px;
-}
+} */
 
 li:after{
     content: '';

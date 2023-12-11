@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <Hero />
       {/* journey */}
-      <div name="journey">
+      <div name="journey" >
         <Experience />
       </div>
       {/* about */}

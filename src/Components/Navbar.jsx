@@ -18,10 +18,11 @@ const Navbar = () => {
       <li className="transform cursor-pointer ">
         <Link
           to={"home"}
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          duration={500}
           class="nav"
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active" : ""
-          }
         >
           Home
         </Link>
@@ -29,10 +30,12 @@ const Navbar = () => {
       <li className="transform cursor-pointer ">
         <Link
           to={"journey"}
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          offset={-50}
+          duration={500}
           class="nav"
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active" : ""
-          }
         >
           Journey
         </Link>
@@ -40,9 +43,11 @@ const Navbar = () => {
       <li className="transform cursor-pointer ">
         <Link
           to={"about"}
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active" : ""
-          }
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          offset={-50}
+          duration={500}
         >
           About
         </Link>
@@ -50,9 +55,11 @@ const Navbar = () => {
       <li className="transform cursor-pointer ">
         <Link
           to={"services"}
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active" : ""
-          }
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          offset={-50}
+          duration={500}
         >
           Services
         </Link>
@@ -60,9 +67,11 @@ const Navbar = () => {
       <li className="transform cursor-pointer ">
         <Link
           to={"projects"}
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active" : ""
-          }
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          offset={-50}
+          duration={500}
         >
           Projects
         </Link>
@@ -70,9 +79,11 @@ const Navbar = () => {
       <li className="transform cursor-pointer ">
         <Link
           to={"contact"}
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active" : ""
-          }
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          offset={50}
+          duration={500}
         >
           Contact
         </Link>
@@ -81,11 +92,11 @@ const Navbar = () => {
   );
   return (
     <div
-    className={
-      navBar
-        ? " bg-[#100f0fe4] z-10 w-full sticky top-0 transform"
-        : "bg-transparent z-10 w-full sticky top-0 transition duration-500"
-    }
+      className={
+        navBar
+          ? " bg-[#100f0fe4] z-10 w-full sticky top-0 transform"
+          : "bg-transparent z-10 w-full sticky top-0 transition duration-500"
+      }
     >
       <div className="drawer z-20 ">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
