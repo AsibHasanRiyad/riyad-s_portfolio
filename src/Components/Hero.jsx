@@ -73,10 +73,10 @@ const Hero = () => {
                   target="blank"
                   to="https://drive.google.com/file/d/1_UOF7253b_o-VdBjycVfPv2nsHkHBY5z/view?fbclid=IwAR3m-x2T2hsmSIqAI2Dtv2hM4ynPra3DemNVqRWlwOVz6pnuJUqhZwDaELE"
                 >
-                  <h1 className=" my-6 flex gap-2 items-center justify-center  font-light w-fit text-xl cursor-pointer border border-gray-200 rounded-full px-4 py-2 transform hover:scale-110 transition duration-500 ease-out hover:bg-gray-200 hover:text-black">
+                  <a download={true} href="https://drive.google.com/u/3/uc?id=14J9VoBYHSJ7TpoyGnQQxSGuOQh1YyD5K&export=download" className=" my-6 flex gap-2 items-center justify-center  font-light w-fit text-xl cursor-pointer border border-gray-200 rounded-full px-4 py-2 transform hover:scale-110 transition duration-500 ease-out hover:bg-gray-200 hover:text-black">
                     {" "}
                     <HiDownload></HiDownload> Resume
-                  </h1>
+                  </a>
                 </Link>
               </div>
             </div>

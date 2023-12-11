@@ -14,28 +14,28 @@ const projectData = [
     category: "React js",
     details:
       "On a continual quest for learning, I leverage a strong work ethic to apply my React development skills",
-    Link: "/",
-    gitHub: "/",
+    Link: "https://connectopia-9e807.web.app/",
+    gitHub: "https://github.com/AsibHasanRiyad/connectopia-client",
   },
   {
     image:
       "https://i.ibb.co/pXQGNtC/Pink-Blue-Powerful-Sunrise-Over-the-Sea-Quote-Instagram-Post-1.png",
-    name: "Connectopia",
+    name: "Learnify",
     category: "React js",
     details:
       "On a continual quest for learning, I leverage a strong work ethic to apply my React development skills",
-    Link: "/",
-    gitHub: "/",
+    Link: "https://learnify-20090.web.app/",
+    gitHub: "https://github.com/AsibHasanRiyad/learnify-client",
   },
   {
     image:
       "https://i.ibb.co/kyzHgyn/Pink-Blue-Powerful-Sunrise-Over-the-Sea-Quote-Instagram-Post-2.png",
-    name: "Connectopia",
+    name: "Gadget Junction",
     category: "React js",
     details:
       "On a continual quest for learning, I leverage a strong work ethic to apply my React development skills",
-    Link: "/",
-    gitHub: "/",
+    Link: "https://gadget-junction.web.app/",
+    gitHub: "https://github.com/AsibHasanRiyad/gadget-junction-client",
   },
   {
     image:
@@ -51,11 +51,11 @@ const projectData = [
 
 const Projects = () => {
   return (
-    <section className="relative  pb-48">
+    <section className="relative">
       <div className=" container mx-auto ">
         <div className=" max-w-[400px] mx-auto lg:mx-0 text-center lg:text-left mb-12 lg:h-[400px] flex flex-col justify-center  items-center lg:items-start ">
-          <h1 className=" text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500 text-5xl font-semibold">
-            ALl Project
+          <h1 className=" text-transparent bg-gradient-to-br py-2 bg-clip-text from-indigo-500 via-purple-500 to-pink-500 text-5xl font-semibold">
+            ALl Projects
           </h1>
           <p className=" text-xl text-gray-200 py-4">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum,

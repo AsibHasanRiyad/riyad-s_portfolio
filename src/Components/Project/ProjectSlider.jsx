@@ -22,7 +22,7 @@ const ProjectSlider = ({ data }) => {
           <Link className=" text-4xl" to={data.gitHub}>
           <FaGithub></FaGithub>
           </Link>
-          <Link to={data.live}>
+          <Link to={data.Link}>
           <FaLink className=" text-4xl"></FaLink>
           </Link>
         </div>
