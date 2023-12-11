@@ -10,7 +10,7 @@ import { HiMail } from "react-icons/hi";
 const PersonalInfo = () => {
   return (
     <div
-      data-aos="fade-right"
+      data-aos="fade-left"
       data-aos-duration="600"
       data-aos-easing="ease-in-sine"
       className=" text-gray-200"

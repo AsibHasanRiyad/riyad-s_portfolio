@@ -77,7 +77,12 @@ const Projects = () => {
             pagination={{ clickable: true }}
           >
             {projectData.map((data, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide
+                data-aos="fade-left"
+                data-aos-duration="600"
+                data-aos-easing="ease-in-sine"
+                key={index}
+              >
                 <ProjectSlider data={data} />
               </SwiperSlide>
             ))}

@@ -110,7 +110,7 @@ export default function BasicTabs() {
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         <div
-          data-aos="fade-right"
+          data-aos="fade-left"
           data-aos-duration="600"
           data-aos-easing="ease-in-sine"
         >
