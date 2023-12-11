@@ -15,7 +15,7 @@ const Footer = () => {
         </h1>
 
         <p className="text-sm text-gray-600 dark:text-gray-300">
-          © Copyright 2023. All Rights Reserved. Riyad
+        © 2023. All Rights Reserved by <span className="text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500">Riyad</span>
         </p>
 
         <div className="flex mt-4 -mx-1.5 text-3xl gap-2 ">

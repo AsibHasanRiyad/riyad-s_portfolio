@@ -60,10 +60,9 @@ const Projects = () => {
               ALl Projects
             </h1>
             <p className=" text-base text-gray-200 py-4">
-              Browse my portfolio featuring diverse projects, from dynamic web
-              apps with React to intuitive mobile experiences. Each project
-              blends innovation, user-centric design, and cutting-edge
-              technology for impactful results
+              Discover dynamic React apps, intuitive mobile experiences, and
+              innovative design. My projects blend cutting-edge technology for
+              impactful and user-centric results.
             </p>
           </div>
           {/* slide */}
