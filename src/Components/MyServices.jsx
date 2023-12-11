@@ -1,22 +1,23 @@
-import { FaCss3, FaHtml5, FaReact } from "react-icons/fa";
-
+import {  FaFigma } from "react-icons/fa";
+import { IoLogoAppleAr } from "react-icons/io5";
+import { SiEbox } from "react-icons/si";
 const MyServices = () => {
   const services = [
     {
       title: "Web Development",
-      icon:<FaHtml5 /> ,
+      icon:<SiEbox /> ,
       Description:
         "On a continual quest for learning, I leverage a strong work ethic to apply my React development skills",
     },
     {
       title: "App Development",
-      icon:<FaCss3 /> ,
+      icon:<IoLogoAppleAr /> ,
       Description:
         "On a continual quest for learning, I leverage a strong work ethic to apply my React development skills",
     },
     {
-      title: "App Maintain",
-      icon:<FaReact /> ,
+      title: "Figma to HTML",
+      icon:<FaFigma /> ,
       Description:
         "On a continual quest for learning, I leverage a strong work ethic to apply my React development skills",
     },
@@ -30,11 +31,11 @@ const MyServices = () => {
       {/* card */}
 
       <div className=" flex justify-center">
-        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 justify-between">
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 justify-between my-5">
           {services.map((service) => (
             <div
               key={service.name}
-              className=" w-52 h-52 border-[#9B58F5] border relative rounded-md p-2 shadow-md shadow-[#9B58F5]"
+              className=" w-52 h-52 border-[#9B58F5] border relative rounded-md p-2 shadow  shadow-[#9B58F5] transform hover:scale-110 transition duration-500 ease-out cursor-pointer  "
             >
               <div className=" flex justify-center -top-5 right-21 bg-[#161513] px-3 absolute text-5xl text-[#9b58f5]">
                 {service.icon}
