@@ -31,7 +31,7 @@ const PersonalInfo = () => {
         </div>
         <div className=" flex items-center gap-2">
           <FaGraduationCap className=" text-[#A456F6]" />
-          <p>Masters in Eee</p>
+          <p>Bsc in EEE</p>
         </div>
         <div className=" flex items-center gap-2">
           <FaPhone className=" text-[#A456F6]" />

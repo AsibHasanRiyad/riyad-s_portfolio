@@ -60,7 +60,7 @@ const Hero = () => {
               <div className=" flex items-center gap-5 max-w-max mx-auto">
                 <Link
                   target="blank"
-                  to="https://drive.google.com/file/d/1_UOF7253b_o-VdBjycVfPv2nsHkHBY5z/view?fbclid=IwAR3m-x2T2hsmSIqAI2Dtv2hM4ynPra3DemNVqRWlwOVz6pnuJUqhZwDaELE"
+                  to="https://www.linkedin.com/in/asibhasan/"
                 >
                   <h1 className=" my-6 flex gap-2 items-center justify-center  font-light w-fit text-xl cursor-pointer border border-gray-200 rounded-full px-4 py-2 transform hover:scale-110 transition duration-500 ease-out hover:bg-gray-200 hover:text-black">
                     {" "}

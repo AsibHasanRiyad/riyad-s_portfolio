@@ -28,7 +28,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          toast.success('Email Successfully Sent...', {id: toastId});
+          toast.success("Email Successfully Sent...", { id: toastId });
         },
         (error) => {
           console.log(error.text);
@@ -44,7 +44,9 @@ const Contact = () => {
               Get In Touch
             </h1>
             <p className=" text-white py-6">
-            Ready to discuss your project or have a question? I&apos;m here to help! Feel free to reach out via the provided contact form or email. Let&apos;s turn your ideas into reality.
+              Ready to discuss your project or have a question? I&apos;m here to
+              help! Feel free to reach out via the provided contact form or
+              email. Let&apos;s turn your ideas into reality.
             </p>
 
             <div className=" space-y-4">
@@ -77,6 +79,7 @@ const Contact = () => {
 
               <div className="flex mt-4 -mx-1.5 text-3xl gap-2 ">
                 <a
+                  target="blank"
                   className="mx-1.5  text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
                   href="https://twitter.com/AsibHasanRiyad"
                 >
@@ -84,6 +87,7 @@ const Contact = () => {
                 </a>
 
                 <a
+                  target="blank"
                   className="mx-1.5  text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
                   href="https://www.linkedin.com/in/asibhasan/"
                 >
@@ -91,6 +95,7 @@ const Contact = () => {
                 </a>
 
                 <a
+                  target="blank"
                   className="mx-1.5  text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
                   href="https://www.facebook.com/syd.ryd"
                 >
@@ -98,6 +103,7 @@ const Contact = () => {
                 </a>
 
                 <a
+                  target="blank"
                   className="mx-1.5  text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
                   href="https://www.instagram.com/sayad.riyad/"
                 >
