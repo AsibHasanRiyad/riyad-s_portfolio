@@ -25,7 +25,7 @@ const projectData = [
     category: "React js",
     details:
       "Technologies Used: React.js,Tailwind CSS, React pdf, Node.js, Express.js, MongoDB, Firebase, GitHub.",
-    Link: "https://learnify-926e4.web.app/",
+    Link: "https://horrible-root.surge.sh/",
     gitHub: "https://github.com/AsibHasanRiyad/learnify-client",
   },
   {
