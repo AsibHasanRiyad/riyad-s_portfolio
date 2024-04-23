@@ -53,7 +53,7 @@ const Hero = () => {
                 />
               </div>
             </h1> */}
-              {/* about */}
+              {/* about  */}
               <h1 className="max-w-xl mx-auto my-6 text-xs md:text-base">
               Passionate web developer dedicated to crafting interactive digital experiences. Expert in cutting-edge technologies, committed to turning ideas into innovative online solutions.
               </h1>
