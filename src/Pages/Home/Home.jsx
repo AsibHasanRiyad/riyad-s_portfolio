@@ -5,6 +5,7 @@ import Hero from "../../Components/Hero";
 import MyServices from "../../Components/MyServices";
 import Projects from "../../Components/Project/Projects";
 import About from "../../Components/About";
+import MyProject from "../../Components/MyProject/MyProject";
 
 const Home = () => {
   return (
@@ -21,9 +22,10 @@ const Home = () => {
         <MyServices />
       </div>
       {/* projects */}
-      <Element name="projects" className=" py-10 md:py-14 lg:py-28">
+      <Element name="projects" className="py-10 md:py-14 lg:py-28">
         <Projects />
       </Element>
+      <MyProject />
       {/* contact */}
       <div name="contact">
         <Contact />
