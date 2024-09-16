@@ -44,7 +44,6 @@ export const TracingBeam = ({ children, className }) => {
         <svg
           viewBox={`0 0 20 ${svgHeight}`}
           width="20"
-          // Set the SVG height
           height={svgHeight}
           className="block ml-4 "
           aria-hidden="true"
