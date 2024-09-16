@@ -8,6 +8,7 @@ import About from "../../Components/About";
 // import MyProject from "../../Components/MyProject/MyProject";
 import { TimelineDemo } from "../../Components/Project/TimelineProject";
 import "./Home.css";
+import { MyProject } from "../../Components/MyProject";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         {/* <Experience /> */}
         <TimelineDemo />
       </div>
+      <MyProject />
       <div className="block mt-20 mb-10 lg:hidden" name="journey">
         <Experience />
         {/* <TimelineDemo /> */}
@@ -29,10 +31,10 @@ const Home = () => {
         <MyServices />
       </div>
       {/* projects */}
-      <Element name="projects" className="py-10 md:py-14 lg:py-28">
+      {/* <Element name="projects" className="py-10 md:py-14 lg:py-28">
         <Projects />
-      </Element>
-      {/* <MyProject /> */}
+      </Element> */}
+      <MyProject />
       {/* contact */}
       <div name="contact">
         <Contact />

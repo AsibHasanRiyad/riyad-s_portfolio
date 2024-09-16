@@ -31,15 +31,12 @@ export const Timeline = ({ data }) => {
       </div>
       <div ref={ref} className="relative mx-auto max-w-7xl">
         {data.map((item, index) => (
-          <div
-            key={index}
-            className="flex justify-start pt-10 md:pt-24 md:gap-10"
-          >
+          <div key={index} className="flex justify-start pt-10 md:gap-10">
             <div className="sticky z-40 flex flex-col items-center self-start max-w-xs md:flex-row top-40 lg:max-w-sm md:w-full">
               <div className="absolute flex items-center justify-center w-10 h-10 bg-white rounded-full left-3 md:left-3 dark:bg-black">
                 <div className="w-4 h-4 p-2 border rounded-full bg-neutral-200 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700" />
               </div>
-              <h3 className="hidden text-xl font-bold md:block md:pl-20 md:text-5xl text-neutral-500 dark:text-neutral-500 ">
+              <h3 className="hidden text-xl font-bold md:block md:pl-20 md:text-4xl text-neutral-500 dark:text-neutral-500 ">
                 {item.title}
               </h3>
             </div>

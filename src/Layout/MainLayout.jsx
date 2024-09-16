@@ -6,13 +6,13 @@ import { TracingBeam } from "../Components/ui/tracing-beam";
 const MainLayout = () => {
   return (
     <div name="home" className=" bg-[#161513] overflow-hidden">
-      <TracingBeam>
+      <>
         <Navbar />
         <div className="px-4 md:px-8 lg:px-20">
           <Outlet></Outlet>
         </div>
         <Footer />
-      </TracingBeam>
+      </>
     </div>
   );
 };

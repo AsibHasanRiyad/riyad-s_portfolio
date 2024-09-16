@@ -1,7 +1,7 @@
 // import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 import { HiDownload } from "react-icons/hi";
-import HeroMarquee from "./HeroMarquee";
+// import HeroMarquee from "./HeroMarquee";
 import { FaLinkedin } from "react-icons/fa6";
 
 const Hero = () => {
@@ -55,7 +55,9 @@ const Hero = () => {
             </h1> */}
               {/* about  */}
               <h1 className="max-w-xl mx-auto my-6 text-xs md:text-base">
-              Passionate web developer dedicated to crafting interactive digital experiences. Expert in cutting-edge technologies, committed to turning ideas into innovative online solutions.
+                Passionate web developer dedicated to crafting interactive
+                digital experiences. Expert in cutting-edge technologies,
+                committed to turning ideas into innovative online solutions.
               </h1>
 
               <div className="flex items-center gap-5 mx-auto max-w-max">
@@ -86,7 +88,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <HeroMarquee></HeroMarquee>
+      {/* <HeroMarquee></HeroMarquee> */}
     </div>
   );
 };
