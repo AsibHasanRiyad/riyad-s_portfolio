@@ -1,13 +1,13 @@
 import "swiper/css";
 import "swiper/css/pagination";
-import 'swiper/css/navigation';
+import "swiper/css/navigation";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // import { Pagination } from "swiper/modules";
 import ProjectSlider from "./ProjectSlider";
 // import { Element } from "react-scroll";
-import { Navigation } from 'swiper/modules';
+import { Navigation } from "swiper/modules";
 
 const projectData = [
   {
@@ -78,7 +78,7 @@ const Projects = () => {
               className=" h-[480px]"
               slidesPerView={1}
               navigation={true}
-              modules={[Navigation]} 
+              modules={[Navigation]}
               breakpoints={{
                 640: {
                   slidesPerView: 2,

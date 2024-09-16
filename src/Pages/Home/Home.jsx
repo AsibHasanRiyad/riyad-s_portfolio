@@ -5,15 +5,22 @@ import Hero from "../../Components/Hero";
 import MyServices from "../../Components/MyServices";
 import Projects from "../../Components/Project/Projects";
 import About from "../../Components/About";
-import MyProject from "../../Components/MyProject/MyProject";
+// import MyProject from "../../Components/MyProject/MyProject";
+import { TimelineDemo } from "../../Components/Project/TimelineProject";
+import "./Home.css";
 
 const Home = () => {
   return (
     <div>
       <Hero />
       {/* journey */}
-      <div name="journey">
+      <div className="hidden mt-20 mb-10 lg:block" name="journey">
+        {/* <Experience /> */}
+        <TimelineDemo />
+      </div>
+      <div className="block mt-20 mb-10 lg:hidden" name="journey">
         <Experience />
+        {/* <TimelineDemo /> */}
       </div>
       {/* about */}
       <About />
@@ -25,7 +32,7 @@ const Home = () => {
       <Element name="projects" className="py-10 md:py-14 lg:py-28">
         <Projects />
       </Element>
-      <MyProject />
+      {/* <MyProject /> */}
       {/* contact */}
       <div name="contact">
         <Contact />

@@ -1,8 +1,6 @@
-
-
 const Experience = () => {
   return (
-    <div  className="py-6 md:py-10 lg:py-20">
+    <div className="py-6 md:py-10 lg:py-20">
       <h1 className="pb-2 mb-20 text-5xl font-bold text-center text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500">
         My Journey
       </h1>
@@ -26,12 +24,8 @@ const Experience = () => {
             <div className="flex items-center justify-end w-full mx-auto ">
               <div className="w-full md:w-1/2 md:pl-8">
                 <div className="p-4 rounded shadow bg-slate-800">
-                  <h3 className="text-lg ">
-                    Junior Front-End Developer
-                  </h3>
-                  <h1 className="text-sm ">
-                    Rainier Technology
-                  </h1>
+                  <h3 className="text-lg ">Junior Front-End Developer</h3>
+                  <h1 className="text-sm ">Rainier Technology</h1>
                 </div>
               </div>
             </div>
