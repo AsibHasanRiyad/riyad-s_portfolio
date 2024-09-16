@@ -21,7 +21,7 @@ const DummyContent = () => {
     <div>
       <img
         src={img}
-        className="w-full h-full "
+        className="w-full h-full rounded-b-3xl "
         alt="Macbook mockup from Aceternity UI"
       />
     </div>
