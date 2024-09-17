@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { IconCube, IconHome } from "@tabler/icons-react";
 import { FloatingDock } from "./ui/floating-dock";
 import { FaBuffer, FaRoad, FaUser, FaWhatsapp } from "react-icons/fa";
+import { IoIosArrowDropdownCircle } from "react-icons/io";
 
 export function FloatingDockDemo() {
   const [dockVisible, setDockVisible] = useState(false);
@@ -59,10 +60,17 @@ export function FloatingDockDemo() {
 
   return (
     <div
-      className={`fixed bottom-0 w-full mx-auto flex justify-end md:justify-center mb-3 z-[1000] transition-transform duration-500 ${
+      className={`fixed bottom-0 w-full mx-auto flex-col items-center flex justify-end md:justify-center mb-3 z-[1000] transition-transform duration-500 ${
         dockVisible ? "translate-y-0" : "translate-y-28"
       }`}
     >
+      <button className="relative p-0.5 rounded-full bg-violet-600/90 top-5">
+        {" "}
+        <IoIosArrowDropdownCircle
+          onClick={() => setDockVisible(false)}
+          className="w-8 h-8 text-[#D4D4D4]"
+        />{" "}
+      </button>
       <FloatingDock items={links} mobileClassName="translate-y-0" />
     </div>
   );
