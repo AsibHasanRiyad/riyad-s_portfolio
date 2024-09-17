@@ -69,19 +69,15 @@ const Hero = () => {
                     <FaLinkedin></FaLinkedin> LinkedIn
                   </h1>
                 </Link>
-                <Link
-                  target="blank"
-                  to="https://drive.google.com/file/d/1_UOF7253b_o-VdBjycVfPv2nsHkHBY5z/view?fbclid=IwAR3m-x2T2hsmSIqAI2Dtv2hM4ynPra3DemNVqRWlwOVz6pnuJUqhZwDaELE"
+
+                <a
+                  download={true}
+                  href="https://drive.google.com/file/d/1mr0zzolqias3MWOLyuA_opF2RoZ5sPYb/view?usp=sharing"
+                  className="flex items-center justify-center gap-2 px-4 py-2 my-6 text-xl font-light transition duration-500 ease-out transform border border-gray-200 rounded-full cursor-pointer w-fit hover:scale-110 hover:bg-gray-200 hover:text-black"
                 >
-                  <a
-                    download={true}
-                    href="https://drive.google.com/u/3/uc?id=14J9VoBYHSJ7TpoyGnQQxSGuOQh1YyD5K&export=download"
-                    className="flex items-center justify-center gap-2 px-4 py-2 my-6 text-xl font-light transition duration-500 ease-out transform border border-gray-200 rounded-full cursor-pointer w-fit hover:scale-110 hover:bg-gray-200 hover:text-black"
-                  >
-                    {" "}
-                    <HiDownload></HiDownload> Resume
-                  </a>
-                </Link>
+                  {" "}
+                  <HiDownload></HiDownload> Resume
+                </a>
               </div>
             </div>
           </div>
