@@ -60,15 +60,15 @@ export function FloatingDockDemo() {
 
   return (
     <div
-      className={`fixed bottom-0 w-full mx-auto flex-col items-center flex justify-end md:justify-center mb-3 z-[1000] transition-transform duration-500 ${
+      className={`fixed bottom-0 w-full mx-auto flex-col items-end  md:items-center flex justify-end md:justify-center mb-7 mr-2 z-[1000] transition-transform duration-500 ${
         dockVisible ? "translate-y-0" : "translate-y-28"
       }`}
     >
-      <button className="relative p-0.5 rounded-full bg-violet-600/90 top-5">
+      <button className="relative p-0.5 rounded-full hidden md:block bg-violet-600/90 top-5">
         {" "}
         <IoIosArrowDropdownCircle
           onClick={() => setDockVisible(false)}
-          className="w-9 h-9 text-[#D4D4D4]"
+          className="w-9 h-9 text-[#D4D4D4] "
         />{" "}
       </button>
       <FloatingDock items={links} mobileClassName="translate-y-0" />
