@@ -1,18 +1,8 @@
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-scroll";
 import "./CSS/Navbar.css";
-import { useState } from "react";
+
 const Navbar = () => {
-  const [navBar, setNavBar] = useState(false);
-  const changeBackground = () => {
-    // console.log(window.scrollY);
-    if (window.scrollY >= 90) {
-      setNavBar(true);
-    } else {
-      setNavBar(false);
-    }
-  };
-  window.addEventListener("scroll", changeBackground);
   const navItems = (
     <>
       <li className="transform cursor-pointer ">
@@ -93,9 +83,7 @@ const Navbar = () => {
   return (
     <div
       className={
-        navBar
-          ? " bg-[#100f0fe4] w-full  transform z-[1000]"
-          : "bg-transparent z-10 w-full container mx-auto  transition duration-500"
+        "bg-transparent z-10 w-full container mx-auto  transition duration-500"
       }
     >
       <div className="z-20 drawer ">
