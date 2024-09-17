@@ -8,7 +8,7 @@ export function FloatingDockDemo() {
 
   // Update visibility based on scroll position
   const handleScroll = () => {
-    if (window.scrollY >= 300) {
+    if (window.scrollY >= 270) {
       setDockVisible(true);
     } else {
       setDockVisible(false);
@@ -26,60 +26,44 @@ export function FloatingDockDemo() {
   const links = [
     {
       title: "Home",
-      icon: (
-        <IconHome className="w-full h-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconHome className="w-full h-full text-neutral-300 " />,
       href: "home",
     },
     {
       title: "My Journey",
-      icon: (
-        <FaRoad className="w-full h-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <FaRoad className="w-full h-full text-neutral-300 " />,
       href: "journey",
     },
     {
       title: "About Me",
-      icon: (
-        <FaUser className="w-full h-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <FaUser className="w-full h-full text-neutral-300 " />,
       href: "about",
     },
 
     {
       title: "My Services",
-      icon: (
-        <FaBuffer className="w-full h-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <FaBuffer className="w-full h-full text-neutral-300" />,
       href: "services",
     },
     {
       title: "My Projects",
-      icon: (
-        <IconCube className="w-full h-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconCube className="w-full h-full text-neutral-300" />,
       href: "projects",
     },
     {
       title: "Contact",
-      icon: (
-        <FaWhatsapp className="w-full h-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <FaWhatsapp className="w-full h-full text-neutral-300" />,
       href: "contact",
     },
   ];
 
   return (
     <div
-      className={`flex items-center justify-center h-[5rem] w-full z-[1000] transition-transform duration-500 ${
-        dockVisible ? "sticky bottom-0 translate-y-0" : "translate-y-24"
+      className={`fixed bottom-0 w-full mx-auto flex justify-end md:justify-center mb-3 z-[1000] transition-transform duration-500 ${
+        dockVisible ? "translate-y-0" : "translate-y-28"
       }`}
     >
-      <FloatingDock
-        // only for demo, remove for production
-        mobileClassName="translate-y-20"
-        items={links}
-      />
+      <FloatingDock items={links} mobileClassName="translate-y-0" />
     </div>
   );
 }

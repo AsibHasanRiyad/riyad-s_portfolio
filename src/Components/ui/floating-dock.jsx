@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { cn } from "@/lib/utils";
-import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
+import { GrAppsRounded } from "react-icons/gr";
 import {
   AnimatePresence,
   motion,
@@ -13,55 +13,55 @@ import { Link } from "react-scroll";
 
 export const FloatingDock = ({ items, desktopClassName, mobileClassName }) => {
   return (
-    <>
+    <div className=" w-fit">
       <FloatingDockDesktop items={items} className={desktopClassName} />
-      {/* <FloatingDockMobile items={items} className={mobileClassName} /> */}
-    </>
+      <FloatingDockMobile items={items} className={mobileClassName} />
+    </div>
   );
 };
 
-// const FloatingDockMobile = ({ items, className }) => {
-//   const [open, setOpen] = useState(false);
+const FloatingDockMobile = ({ items, className }) => {
+  const [open, setOpen] = useState(false);
 
-//   return (
-//     <div className={cn("relative block md:hidden", className)}>
-//       <AnimatePresence>
-//         {open && (
-//           <motion.div
-//             layoutId="nav"
-//             className="absolute inset-x-0 flex flex-col gap-2 mb-2 bottom-full"
-//           >
-//             {items.map((item, idx) => (
-//               <motion.div
-//                 key={item.title}
-//                 initial={{ opacity: 0, y: 10 }}
-//                 animate={{ opacity: 1, y: 0 }}
-//                 exit={{ opacity: 0, y: 10, transition: { delay: idx * 0.05 } }}
-//                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
-//               >
-//                 <Link
-//                   to={item.href}
-//                   smooth={true}
-//                   spy={true}
-//                   duration={500}
-//                   className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 dark:bg-neutral-900"
-//                 >
-//                   <div className="w-4 h-4">{item.icon}</div>
-//                 </Link>
-//               </motion.div>
-//             ))}
-//           </motion.div>
-//         )}
-//       </AnimatePresence>
-//       <button
-//         onClick={() => setOpen(!open)}
-//         className="sticky top-0 flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 dark:bg-neutral-800"
-//       >
-//         <IconLayoutNavbarCollapse className="w-5 h-5 text-neutral-500 dark:text-neutral-400" />
-//       </button>
-//     </div>
-//   );
-// };
+  return (
+    <div className={cn("sticky top-0 z-[1200] block md:hidden", className)}>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            layoutId="nav"
+            className="absolute inset-x-0 flex flex-col gap-2 mb-2 bottom-full"
+          >
+            {items.map((item, idx) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 10, transition: { delay: idx * 0.05 } }}
+                transition={{ delay: (items.length - 1 - idx) * 0.05 }}
+              >
+                <Link
+                  to={item.href}
+                  smooth={true}
+                  spy={true}
+                  duration={500}
+                  className="flex items-center justify-center w-10 h-10 rounded-full bg-violet-600/90"
+                >
+                  <div className="w-4 h-4">{item.icon}</div>
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <button
+        onClick={() => setOpen(!open)}
+        className="flex items-center justify-center w-10 h-10 mr-4 rounded-full bg-violet-600"
+      >
+        <GrAppsRounded className="w-5 h-5 text-neutral-100" />
+      </button>
+    </div>
+  );
+};
 
 const FloatingDockDesktop = ({ items, className }) => {
   let mouseX = useMotionValue(Infinity);
@@ -71,7 +71,7 @@ const FloatingDockDesktop = ({ items, className }) => {
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto flex h-16 gap-4 cursor-pointer items-end rounded-2xl bg-violet-600/90  px-8 pb-3",
+        "mx-auto hidden md:flex h-16 gap-4 cursor-pointer items-end rounded-2xl bg-violet-600/90  px-8 pb-3",
         className
       )}
     >
@@ -138,7 +138,7 @@ function IconContainer({ mouseX, title, icon, href }) {
               initial={{ opacity: 0, y: 10, x: "-50%" }}
               animate={{ opacity: 1, y: 0, x: "-50%" }}
               exit={{ opacity: 0, y: 2, x: "-50%" }}
-              className="px-2 py-0.5 whitespace-pre rounded-md bg-neutral-800 border    dark:text-white border-neutral-900 text-neutral-700 absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs"
+              className="px-2 py-0.5 whitespace-pre rounded-md bg-neutral-800 border     border-neutral-900 text-neutral-100 absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs"
             >
               {title}
             </motion.div>
