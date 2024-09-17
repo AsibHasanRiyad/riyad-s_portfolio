@@ -68,7 +68,7 @@ export function FloatingDockDemo() {
         {" "}
         <IoIosArrowDropdownCircle
           onClick={() => setDockVisible(false)}
-          className="w-8 h-8 text-[#D4D4D4]"
+          className="w-9 h-9 text-[#D4D4D4]"
         />{" "}
       </button>
       <FloatingDock items={links} mobileClassName="translate-y-0" />

@@ -6,11 +6,11 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="mt-10 md:mt-16">
+    <div className="flex items-center justify-center min-h-[70vh] mt-10 md:mt-16">
       <div className="flex items-center justify-center ">
         <div>
           {/* Profile picture Section */}
-          <div className="w-full ">
+          {/* <div className="w-full ">
             <div className="flex items-center justify-center ">
               <img
                 className="w-40 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 md:w-44 lg:w-52"
@@ -18,7 +18,7 @@ const Hero = () => {
                 alt=""
               />
             </div>
-          </div>
+          </div> */}
 
           {/* Description Section */}
           <div className=" text-[#F1F2F5] ">
@@ -53,7 +53,7 @@ const Hero = () => {
               </div>
             </h1> */}
               {/* about  */}
-              <h1 className="max-w-xl mx-auto my-6 text-xs leading-normal tracking-wider md:text-base">
+              <h1 className="max-w-xl mx-auto my-6 text-xs leading-relaxed tracking-widest md:text-base">
                 Passionate web developer dedicated to crafting interactive
                 digital experiences. Expert in cutting-edge technologies,
                 committed to turning ideas into innovative online solutions.
