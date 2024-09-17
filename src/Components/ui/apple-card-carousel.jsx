@@ -17,13 +17,13 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { useOutsideClick } from "../../utils/use-outside-click";
+import { Link } from "react-router-dom";
+import { LinkPreview } from "./link-preview";
 
 export const CarouselContext = createContext({
   onCardClose: () => {},
   currentIndex: 0,
 });
-
-import image from "../../assets/ProfilePicture.jpg";
 
 export const Carousel = ({ items, initialScroll = 0 }) => {
   const carouselRef = React.useRef(null);
@@ -79,9 +79,9 @@ export const Carousel = ({ items, initialScroll = 0 }) => {
     <CarouselContext.Provider
       value={{ onCardClose: handleCardClose, currentIndex }}
     >
-      <div className="relative w-full">
+      <div className="relative w-full mx-auto max-w-7xl">
         <div
-          className="flex w-full overflow-x-scroll overscroll-x-auto py-10 md:py-20 scroll-smooth [scrollbar-width:none]"
+          className="flex w-full overflow-x-scroll overscroll-x-auto py-4   scroll-smooth [scrollbar-width:none]"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
@@ -193,7 +193,7 @@ export const Card = ({ card, index, layout = false }) => {
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="max-w-5xl mx-auto bg-black/50 border border-white h-fit  z-[60] my-10 pt-5  rounded-3xl font-sans relative"
+              className="max-w-5xl mx-4 lg:mx-auto bg-black/50 border border-neutral-700 h-fit  z-[60] my-10 pt-5  rounded-2xl font-sans relative"
             >
               <button
                 className="sticky flex items-center justify-center w-8 h-8 ml-auto mr-5 bg-white rounded-full top-4 "
@@ -207,12 +207,12 @@ export const Card = ({ card, index, layout = false }) => {
               >
                 {card.category}
               </motion.p>
-              <motion.p
+              {/* <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}
                 className="px-5 mt-4 text-2xl font-semibold text-white md:text-5xl"
               >
                 {card.title}
-              </motion.p>
+              </motion.p> */}
               <div className="pt-10">{card.content}</div>
             </motion.div>
           </div>
@@ -220,23 +220,66 @@ export const Card = ({ card, index, layout = false }) => {
       </AnimatePresence>
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
-        onClick={handleOpen}
-        className="rounded-3xl bg-black  h-80 w-56 md:h-[25rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
+        className="rounded-2xl border  border-neutral-600 h-64 w-64 md:w-72 md:h-72 lg:h-[25rem] lg:w-[400px] overflow-hidden flex flex-col items-center justify-end relative z-10"
       >
-        <div className="absolute inset-x-0 top-0 z-30 h-full pointer-events-none bg-gradient-to-b from-black/40 via-transparent to-transparent" />
+        <div className="absolute inset-x-0 top-0 z-30 h-full pointer-events-none bg-black/50 " />
         <div className="relative z-40 p-8">
-          {/* <motion.p
-            layoutId={layout ? `category-${card.category}` : undefined}
-            className="font-sans text-sm font-medium text-left text-white md:text-base"
+          <button
+            className="px-4 py-1.5 text-white text-xs md:text-base mb-8 lg:mb-14 rounded-full bg-violet-600"
+            onClick={handleOpen}
           >
-            {card.category}
-          </motion.p>
+            See Preview
+          </button>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+            className="text-white text-xl md:text-3xl font-semibold max-w-xs text-center [text-wrap:balance] font-sans mt-2"
           >
             {card.title}
-          </motion.p> */}
+          </motion.p>
+          <div className="flex items-center justify-between gap-3 my-3">
+            <motion.p
+              layoutId={layout ? `category-${card.category}` : undefined}
+              className="font-sans text-sm font-medium text-left text-white md:text-base"
+            >
+              <LinkPreview url={card.Live}>
+                <Link
+                  className="px-2 py-1 text-xs text-white rounded-sm bg-violet-600 "
+                  target="_blank"
+                  to={card.Live}
+                >
+                  Live
+                </Link>
+              </LinkPreview>
+            </motion.p>
+            <motion.p
+              layoutId={layout ? `category-${card.category}` : undefined}
+              className="font-sans text-sm font-medium text-left text-white md:text-base"
+            >
+              <LinkPreview url="https://github.com/">
+                <Link
+                  className="px-2 py-1 text-xs text-white rounded-sm bg-violet-600 "
+                  target="_blank"
+                  to={card.Client}
+                >
+                  Client
+                </Link>
+              </LinkPreview>
+            </motion.p>
+            <motion.p
+              layoutId={layout ? `category-${card.category}` : undefined}
+              className="font-sans text-sm font-medium text-left text-white md:text-base"
+            >
+              <LinkPreview url={"https://github.com/"}>
+                <Link
+                  className="px-2 py-1 text-xs text-white rounded-sm bg-violet-600 "
+                  target="_blank"
+                  to={card.Server}
+                >
+                  Server
+                </Link>
+              </LinkPreview>
+            </motion.p>
+          </div>
         </div>
         <Blurimg
           src={card.src}
@@ -251,9 +294,14 @@ export const Card = ({ card, index, layout = false }) => {
 
 export const Blurimg = ({ height, width, src, className, alt, ...rest }) => {
   const [isLoading, setLoading] = useState(true);
+
   return (
     <img
-      className={cn(className)}
+      className={cn(
+        "transition duration-300",
+        isLoading ? "blur-sm " : "blur-0 bg-transparent",
+        className
+      )}
       src={src}
       decoding="async"
       alt={alt ? alt : "Project"}

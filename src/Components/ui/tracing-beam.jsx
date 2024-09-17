@@ -38,7 +38,7 @@ export const TracingBeam = ({ children, className }) => {
   return (
     <motion.div
       ref={ref}
-      className={cn("relative w-fit max-w-7xl mx-auto h-full", className)}
+      className={cn("relative w-fit lg:max-w-7xl mx-auto h-full", className)}
     >
       <div className="absolute right-0 lg:-right-[77px] top-3">
         <svg

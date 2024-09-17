@@ -1,6 +1,7 @@
 import { FaFigma } from "react-icons/fa";
 import { IoLogoAppleAr } from "react-icons/io5";
 import { SiEbox } from "react-icons/si";
+import Header from "../utils/Header";
 const MyServices = () => {
   const services = [
     {
@@ -24,26 +25,24 @@ const MyServices = () => {
   ];
   return (
     <div>
-      <h1 className="text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500 text-5xl text-center py-6 md:py-10 lg:py-20 font-bold">
-        My Services
-      </h1>
+      <Header header={" My Services"} />
 
       {/* card */}
 
-      <div className=" flex justify-center">
-        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 justify-between my-5">
-          {services.map((service) => (
+      <div className="flex justify-center mt-5 ">
+        <div className="grid justify-between grid-cols-1 gap-20 my-5 md:grid-cols-2 lg:grid-cols-3">
+          {services.map((service, index) => (
             <div
-              key={service.name}
-              className=" w-52 h-52 border-[#9B58F5] border relative rounded-md p-2 shadow  shadow-[#9B58F5] transform hover:scale-110 transition duration-500 ease-out cursor-pointer  "
+              key={index}
+              className=" w-64 h-64 lg:w-72 lg:h-72  border-[#9B58F5] border relative rounded-md p-2 shadow  shadow-[#9B58F5] transform hover:scale-110 transition duration-500 ease-out cursor-pointer  "
             >
               <div className=" flex justify-center -top-5 right-21 bg-[#161513] px-3 absolute text-5xl text-[#9b58f5]">
                 {service.icon}
               </div>
-              <h1 className=" text-white mt-8 text-center text-xl font-semibold">
+              <h1 className="mt-8 text-xl font-semibold text-center text-white lg:text-2xl ">
                 {service.title}
               </h1>
-              <p className=" text-gray-200 text-center text-sm my-3 ">
+              <p className="px-2 my-3 text-sm text-center text-gray-200 lg:my-5 lg:text-base ">
                 {service.Description}
               </p>
             </div>

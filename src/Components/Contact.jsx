@@ -36,21 +36,21 @@ const Contact = () => {
       );
   };
   return (
-    <section className="bg-transparent py-6 md:py-10 lg:py-20">
+    <section className="py-6 mx-auto bg-transparent max-w-7xl md:py-10 lg:py-20">
       <div className="container px-6 mx-auto">
         <div className="lg:flex lg:items-start lg:-mx-6">
-          <div className="lg:w-1/2 lg:mx-6">
-            <h1 className="text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500 text-5xl font-bold">
+          <div className="p-1 lg:w-1/2 lg:mx-6">
+            <h1 className="text-3xl font-bold text-transparent md:text-4xl lg:text-5xl bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500">
               Get In Touch
             </h1>
-            <p className=" text-white py-6">
+            <p className="py-6 text-white ">
               Ready to discuss your project or have a question? I&apos;m here to
               help! Feel free to reach out via the provided contact form or
               email. Let&apos;s turn your ideas into reality.
             </p>
 
-            <div className=" space-y-4">
-              <p className="flex items-center gap-2 text-violet-500 -mx-2">
+            <div className="pl-1 space-y-4 ">
+              <p className="flex items-center gap-2 -mx-2 text-violet-500">
                 <FaLocationArrow />
 
                 <span className="mx-2 text-gray-200 truncate w-72 ">
@@ -58,14 +58,14 @@ const Contact = () => {
                 </span>
               </p>
 
-              <p className="flex items-center gap-2 text-violet-500 -mx-2">
+              <p className="flex items-center gap-2 -mx-2 text-violet-500">
                 <FaPhone />
                 <span className="mx-2 text-gray-200 truncate w-72 ">
                   +8801568260699
                 </span>
               </p>
 
-              <p className="flex items-center gap-2 text-violet-500 -mx-2">
+              <p className="flex items-center gap-2 -mx-2 text-violet-500">
                 <HiMail />
 
                 <span className="mx-2 text-gray-200 truncate w-72 ">
@@ -75,7 +75,7 @@ const Contact = () => {
             </div>
 
             <div className="mt-6 w-80 md:mt-8">
-              <h3 className="text-gray-200  ">Follow Me</h3>
+              <h3 className="text-gray-200 ">Follow Me</h3>
 
               <div className="flex mt-4 -mx-1.5 text-3xl gap-2 ">
                 <a
@@ -113,8 +113,8 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className=" lg:w-1/2 lg:mx-6 mt-10 lg:mt-0">
-            <div className="w-full px-1 md:px-8 mx-auto overflow-hidden bg-transparent rounded-lg   lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
+          <div className="mt-10 lg:w-1/2 lg:mx-6 lg:mt-0">
+            <div className="w-full px-1 mx-auto overflow-hidden bg-transparent rounded-lg lg:px-8 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
               <h1 className="text-lg font-medium text-gray-200">
                 What do you want to ask ?
               </h1>
@@ -161,7 +161,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   value="Send"
-                  className="w-full px-6 py-3 mt-6 text-base font-medium tracking-wide text-white capitalize bg-gradient-to-r rounded-md from-indigo-700 via-purple-600 to-pink-700 cursor-pointer hover:bg-gradient-to-r  hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 transform hover:scale-105 transition duration-500 ease-out "
+                  className="w-full px-6 py-3 mt-6 text-base font-medium tracking-wide text-white capitalize transition duration-500 ease-out transform rounded-md cursor-pointer bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-700 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:scale-105 "
                 >
                   get in touch
                 </button>

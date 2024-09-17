@@ -96,12 +96,12 @@ export default function BasicTabs() {
               {...a11yProps(0)}
               sx={{ color: "White" }}
             />
+            <Tab label="Skills" {...a11yProps(1)} sx={{ color: "White" }} />
             <Tab
-              label="Skills"
-              {...a11yProps(1)}
+              label="Achievements"
+              {...a11yProps(2)}
               sx={{ color: "White" }}
             />
-            <Tab label="Achievements" {...a11yProps(2)} sx={{ color: "White" }} />
           </Tabs>
         </Box>
       </Box>
@@ -114,12 +114,12 @@ export default function BasicTabs() {
           data-aos-duration="600"
           data-aos-easing="ease-in-sine"
         >
-          <h1 className=" text-gray-300 text-3xl my-5">Tools I use everyday</h1>
-          <div className=" text-3xl grid grid-cols-1 md:grid-cols-3 text-gray-300 gap-5 md:gap-20">
+          <h1 className="my-5 text-3xl text-gray-300 ">Tools I use everyday</h1>
+          <div className="grid grid-cols-1 gap-5 text-3xl text-gray-300 md:grid-cols-3 md:gap-20">
             <div>
-              <h1 className=" text-xl">Frontend</h1>
-              <hr className=" my-4" />
-              <div className=" flex flex-wrap gap-6">
+              <h1 className="text-xl ">Frontend</h1>
+              <hr className="my-4 " />
+              <div className="flex flex-wrap gap-6 ">
                 <FaHtml5 />
                 <FaCss3 />
                 <SiJavascript />
@@ -129,19 +129,19 @@ export default function BasicTabs() {
               </div>
             </div>
             <div>
-              <h1 className=" text-xl">Backend</h1>
-              <hr className=" my-4" />
-              <div className=" flex gap-6">
+              <h1 className="text-xl ">Backend</h1>
+              <hr className="my-4 " />
+              <div className="flex gap-6 ">
                 <FaNodeJs />
                 <SiExpress />
                 <SiMongodb />
               </div>
             </div>
             {/* Tools */}
-            <div className=" text-gray-300 ">
-              <h1 className=" text-xl">Tools</h1>
-              <hr className=" my-4" />
-              <div className=" text-3xl flex gap-7">
+            <div className="text-gray-300 ">
+              <h1 className="text-xl ">Tools</h1>
+              <hr className="my-4 " />
+              <div className="flex text-3xl gap-7">
                 <SiVisualstudiocode />
                 <FaFigma />
               </div>

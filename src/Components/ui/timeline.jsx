@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import Header from "../../utils/Header";
 
 export const Timeline = ({ data }) => {
   const ref = useRef(null);
@@ -25,9 +26,7 @@ export const Timeline = ({ data }) => {
   return (
     <div className="w-full font-sans bg-transparent " ref={containerRef}>
       <div className="px-4 mx-auto max-w-7xl md:px-8 lg:px-10">
-        <h1 className="pb-2 mb-5 text-5xl font-bold text-center text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500">
-          My Journey
-        </h1>
+        <Header header={"My Journey"} />
       </div>
       <div ref={ref} className="relative mx-auto max-w-7xl">
         {data.map((item, index) => (

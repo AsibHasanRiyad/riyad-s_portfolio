@@ -22,7 +22,7 @@ const Navbar = () => {
           smooth={true}
           hashSpy={true}
           duration={500}
-          class="nav"
+          className="nav"
         >
           Home
         </Link>
@@ -35,7 +35,7 @@ const Navbar = () => {
           hashSpy={true}
           offset={-50}
           duration={500}
-          class="nav"
+          className="nav"
         >
           Journey
         </Link>
@@ -94,15 +94,15 @@ const Navbar = () => {
     <div
       className={
         navBar
-          ? " bg-[#100f0fe4] z-10 w-full sticky top-0 transform"
-          : "bg-transparent z-10 w-full sticky top-0 transition duration-500"
+          ? " bg-[#100f0fe4] w-full  transform z-[1000]"
+          : "bg-transparent z-10 w-full container mx-auto  transition duration-500"
       }
     >
-      <div className="drawer z-20 ">
+      <div className="z-20 drawer ">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col">
+        <div className="flex flex-col drawer-content">
           {/* Navbar */}
-          <div className=" px-4 lg:px-20">
+          <div className="px-4 lg:px-20">
             <div className="w-full navbar text-[#F1F2F5]  text-xl">
               <div className="flex-none lg:hidden">
                 <label
@@ -126,18 +126,18 @@ const Navbar = () => {
                 </label>
               </div>
               <div className="navbar-start">
-                <h1 className=" text-4xl text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500">
+                <h1 className="text-4xl text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500">
                   Riyad
                 </h1>
               </div>
-              <div className=" navbar-end flex justify-end ">
-                <div className=" hidden lg:block mr-6">
-                  <ul className="flex gap-7 text-xl">{navItems}</ul>
+              <div className="flex justify-end navbar-end">
+                <div className="hidden mr-6 lg:block">
+                  <ul className="flex text-xl gap-7">{navItems}</ul>
                 </div>
-                <h1 className=" transform   cursor-pointer   hover:text-gray-200 ">
+                <h1 className="transform cursor-pointer hover:text-gray-200">
                   {" "}
                   <a target="blank" href="https://github.com/AsibHasanRiyad">
-                    <FaGithub className=" transform cursor-pointer hover:scale-125 transition duration-500 ease-out text-4xl"></FaGithub>
+                    <FaGithub className="text-4xl transition duration-500 ease-out transform cursor-pointer hover:scale-125"></FaGithub>
                   </a>
                 </h1>
               </div>
@@ -150,7 +150,7 @@ const Navbar = () => {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className="menu p-4 w-60 min-h-full bg-black text-gray-200 text-xl gap-5">
+          <ul className="min-h-full gap-5 p-4 text-xl text-gray-200 bg-black menu w-60">
             {/* Sidebar content here */}
             {navItems}
           </ul>

@@ -6,16 +6,15 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="mt-4 lg:mt-10">
+    <div className="mt-10 md:mt-16">
       <div className="flex items-center justify-center ">
         <div>
           {/* Profile picture Section */}
           <div className="w-full ">
             <div className="flex items-center justify-center ">
               <img
-                className="rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 w-52"
+                className="w-40 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 md:w-44 lg:w-52"
                 src="https://i.ibb.co/JjhcHhG/436546569-3285276645106945-1806626773289945412-n-1.jpg"
-                // src="https://i.ibb.co/sVb0qhb/IMG-6494-removebg.png"
                 alt=""
               />
             </div>
@@ -24,7 +23,7 @@ const Hero = () => {
           {/* Description Section */}
           <div className=" text-[#F1F2F5] ">
             <div className="w-full space-y-2 text-center lg:space-y-4">
-              <h1 className=" text-2xl md:text-5xl lg:text-6xl font-bold leading-8 md:leading-[50px] lg:leading-[60px] mt-5">
+              <h1 className=" text-2xl md:text-4xl lg:text-6xl font-bold leading-8 md:leading-[50px] lg:leading-[60px] mt-5">
                 {" "}
                 <span className="text-transparent bg-gradient-to-br bg-clip-text from-indigo-500 via-purple-500 to-pink-500">
                   Hello, I&apos;m Riyad,{" "}
@@ -54,7 +53,7 @@ const Hero = () => {
               </div>
             </h1> */}
               {/* about  */}
-              <h1 className="max-w-xl mx-auto my-6 text-xs md:text-base">
+              <h1 className="max-w-xl mx-auto my-6 text-xs leading-normal tracking-wider md:text-base">
                 Passionate web developer dedicated to crafting interactive
                 digital experiences. Expert in cutting-edge technologies,
                 committed to turning ideas into innovative online solutions.
