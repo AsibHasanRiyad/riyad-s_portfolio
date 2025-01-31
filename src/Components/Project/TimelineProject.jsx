@@ -3,6 +3,18 @@ import { Timeline } from "../../Components/ui/timeline";
 export function TimelineDemo() {
   const data = [
     {
+      title: "2025",
+      content: (
+        <div className="space-y-2 ">
+          <h1 className="mb-4 text-2xl font-normal text-white bg-transparent ">
+            Junior Software Engineer
+          </h1>
+          <p className="text-sm text-neutral-300">DTech Online Limited</p>
+          <p className="text-sm text-neutral-300">October 2024 to Present</p>
+        </div>
+      ),
+    },
+    {
       title: "2024",
       content: (
         <div className="space-y-2 ">
@@ -10,6 +22,9 @@ export function TimelineDemo() {
             Junior Front-End Developer
           </h1>
           <p className="text-sm text-neutral-300">Rainier Technology</p>
+          <p className="text-sm text-neutral-300">
+            February 2024 to September 2024
+          </p>
         </div>
       ),
     },
@@ -33,7 +48,7 @@ export function TimelineDemo() {
       title: "2017",
       content: (
         <div className="space-y-2">
-          <h1 className="mb-4 text-2xl font-normal  bg-transparent ">
+          <h1 className="mb-4 text-2xl font-normal bg-transparent ">
             Higher Secondary Certificate
           </h1>
           <p className="text-sm text-neutral-300">

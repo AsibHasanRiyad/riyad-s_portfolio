@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import { FloatingDockDemo } from "../Components/FloatingDock";
+// import { FloatingDockDemo } from "../Components/FloatingDock";
 // import { TracingBeam } from "../Components/ui/tr/acing-beam";
 
 const MainLayout = () => {
@@ -14,7 +14,7 @@ const MainLayout = () => {
         </div>
 
         <Footer />
-        <FloatingDockDemo />
+        {/* <FloatingDockDemo /> */}
       </>
     </div>
   );
