@@ -242,7 +242,7 @@ export const Card = ({ card, index, layout = false }) => {
           src={card.image}
           alt={card.title}
           fill
-          className="absolute inset-0 z-10 object-cover"
+          className="absolute inset-0 z-10 object-cover w-full h-full"
         />
       </motion.button>
     </>
@@ -256,7 +256,7 @@ export const Blurimg = ({ height, width, src, className, alt, ...rest }) => {
     <img
       className={cn(
         "transition object-cover duration-300",
-        isLoading ? "blur-sm" : "blur-0 bg-transparent",
+        isLoading ? "blur-" : "blur-0 bg-transparent",
         className
       )}
       src={src}
