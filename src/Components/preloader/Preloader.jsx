@@ -154,20 +154,40 @@ const Preloader = () => {
   return (
     <>
       <div className="preloader" ref={preloaderRef}>
-        <div className="progress-bar bg-lochmara"></div>
+        <div className="progress-bar bg-primary"></div>
 
         <div className="preloader-images">
           <div className="img">
-            <img src={zums} alt="" />
+            <img
+              src={
+                "https://images.icon-icons.com/2108/PNG/512/react_icon_130845.png"
+              }
+              alt=""
+            />
           </div>
           <div className="img">
-            <img src={xolaren} alt="" />
+            <img
+              src={
+                "https://pbs.twimg.com/profile_images/1713633504431394816/h28jJ1qM_400x400.jpg"
+              }
+              alt=""
+            />
           </div>
           <div className="img">
-            <img src={dtech} alt="" />
+            <img
+              src={
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdl8u81goWJcMdQlW9PbbFW6GQy1x07JPdJeoVrQtfyEtEKbvECeB1t5PPVMzpc4Pl9tE&usqp=CAU"
+              }
+              alt=""
+            />
           </div>
           <div className="img">
-            <img src={jora} alt="" />
+            <img
+              src={
+                "https://images.seeklogo.com/logo-png/35/1/tailwind-css-logo-png_seeklogo-354675.png"
+              }
+              alt=""
+            />
           </div>
         </div>
       </div>
