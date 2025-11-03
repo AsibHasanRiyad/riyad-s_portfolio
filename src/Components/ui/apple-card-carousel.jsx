@@ -115,7 +115,7 @@ export const Carousel = ({ items, initialScroll = 0 }) => {
                   },
                 }}
                 key={"card" + index}
-                className="last:pr-[5%] md:last:pr-[33%]  rounded-3xl"
+                className="last:pr-[5%]  md:last:pr-[33%]  rounded-3xl"
               >
                 {item}
               </motion.div>
@@ -220,69 +220,26 @@ export const Card = ({ card, index, layout = false }) => {
       </AnimatePresence>
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
-        className="rounded-2xl border  border-neutral-600 h-64 w-64 md:w-72 md:h-72 lg:h-[25rem] lg:w-[400px] overflow-hidden flex flex-col items-center justify-end relative z-10"
+        className="rounded-2xl border  border-neutral-600 h-64 w-64 md:w-72 md:h-72 lg:h-[18rem] lg:w-[400px] overflow-hidden flex flex-col items-center justify-end relative z-10"
       >
         <div className="absolute inset-x-0 top-0 z-30 h-full pointer-events-none bg-black/50 " />
         <div className="relative z-40 p-8">
-          <button
+          <Link
+            to={card.Link}
+            target="blank"
             className="px-4 py-1.5 text-white text-xs md:text-base mb-8 lg:mb-14 rounded-full bg-violet-600"
-            onClick={handleOpen}
           >
             See Preview
-          </button>
+          </Link>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
             className="text-white text-xl md:text-3xl font-semibold max-w-xs text-center [text-wrap:balance] font-sans mt-2"
           >
             {card.title}
           </motion.p>
-          <div className="flex items-center justify-between gap-3 my-3">
-            <motion.p
-              layoutId={layout ? `category-${card.category}` : undefined}
-              className="font-sans text-sm font-medium text-left text-white md:text-base"
-            >
-              <LinkPreview url={card.Live}>
-                <Link
-                  className="px-2 py-1 text-xs text-white rounded-sm bg-violet-600 "
-                  target="_blank"
-                  to={card.Live}
-                >
-                  Live
-                </Link>
-              </LinkPreview>
-            </motion.p>
-            <motion.p
-              layoutId={layout ? `category-${card.category}` : undefined}
-              className="font-sans text-sm font-medium text-left text-white md:text-base"
-            >
-              <LinkPreview url="https://github.com/">
-                <Link
-                  className="px-2 py-1 text-xs text-white rounded-sm bg-violet-600 "
-                  target="_blank"
-                  to={card.Client}
-                >
-                  Client
-                </Link>
-              </LinkPreview>
-            </motion.p>
-            <motion.p
-              layoutId={layout ? `category-${card.category}` : undefined}
-              className="font-sans text-sm font-medium text-left text-white md:text-base"
-            >
-              <LinkPreview url={"https://github.com/"}>
-                <Link
-                  className="px-2 py-1 text-xs text-white rounded-sm bg-violet-600 "
-                  target="_blank"
-                  to={card.Server}
-                >
-                  Server
-                </Link>
-              </LinkPreview>
-            </motion.p>
-          </div>
         </div>
         <Blurimg
-          src={card.src}
+          src={card.image}
           alt={card.title}
           fill
           className="absolute inset-0 z-10 object-cover"
@@ -298,8 +255,8 @@ export const Blurimg = ({ height, width, src, className, alt, ...rest }) => {
   return (
     <img
       className={cn(
-        "transition duration-300",
-        isLoading ? "blur-sm " : "blur-0 bg-transparent",
+        "transition object-cover duration-300",
+        isLoading ? "blur-sm" : "blur-0 bg-transparent",
         className
       )}
       src={src}
